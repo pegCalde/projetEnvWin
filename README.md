@@ -32,22 +32,25 @@ application permettant de tester les connaissances en fin de CM2
 - mettre icône maison pr retourner à l'accueil AFFICHAGE OK
 
 ### 02/01/2021
-- faire en sorte que duo maths et histoire s'affichent en mode paysage
-- afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
-- afficher réponses maths -> tapped
-- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge
-- mettre en place fonctionnement duo maths -> qd 1 élève a faux, ca passe à l'autre élève
-- bouton 'valider' pr Fr et Histoire
-- afficher les questions Fr
+- faire en sorte que duo maths et histoire s'affichent en mode paysage DUO MATHS -> VOIR SI ON A LE TPS POUR LE FAIRE SINON QUE HISTOIRE A METTRE EN PAYSAGE
 - afficher les questions maths
-- afficher notes Fr + Maths + Histoire
+- afficher réponses maths -> tapped
 - chrono maths
-- lier pages aux boutons du menu EN COURS
-- mettre icône maison pr retourner à l'accueil FONCTIONNEL EN COURS
-- mettre en place double tap pr mettre réponse sur frise Histoire
+- mettre en place fonctionnement duo maths -> qd 1 élève a faux, ca passe à l'autre élève DUO -> VOIR SI ON A LE TPS POUR LE FAIRE SINON ON FAIT QUE SOLO
+- afficher les questions Fr
+- afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
+- bouton 'valider' pr réponses formulaire Fr
+- mettre en place double tap pr mettre réponse sur frise Histoire PEG
+- bouton 'valider' pr réponses frise Histoire PEG
+- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge
+- afficher notes Fr
+- afficher notes Maths
+- afficher notes Histoire
+- lier pages aux boutons du menu PEG EN COURS
+- mettre icône maison pr retourner à l'accueil OK
 
 ### 03/01/2021
-- powerpoint présentation
+- powerpoint présentation PEG -> DIMANCHE APREM
 - résolution des bugs
 - vérifier affichage sur ttes les pages
 
