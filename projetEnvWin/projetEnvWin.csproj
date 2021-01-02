@@ -125,6 +125,9 @@
     <Compile Include="ClassesMétiers\Question.cs" />
     <Compile Include="ClassesMétiers\Reponse.cs" />
     <Compile Include="Données\Eleves.cs" />
+    <Compile Include="duo_maths_calcul.xaml.cs">
+      <DependentUpon>duo_maths_calcul.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HistoirePage.xaml.cs">
       <DependentUpon>HistoirePage.xaml</DependentUpon>
     </Compile>
@@ -171,6 +174,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="duo_maths_calcul.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HistoirePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
