@@ -61,6 +61,18 @@ application permettant de tester les connaissances en fin de CM2
 ### 04/01/2021
 - powerpoint présentation PEG -> LUNDI 13H30-15H30
 
+### 05/01/2021
+- 
+
+### 06/01/2021
+- 
+
+### 07/01/2021
+- 
+
+### 08/01/2021
+- 
+
 ### 09/01/2021
 - résolution des bugs
 - vérifier affichage sur ttes les pages
