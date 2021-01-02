@@ -53,6 +53,7 @@ application permettant de tester les connaissances en fin de CM2
 - powerpoint présentation PEG -> DIMANCHE APREM
 - résolution des bugs
 - vérifier affichage sur ttes les pages
+- commenter le code
 
 ## BUGS
 - le menu reste visible sur certaines pages
