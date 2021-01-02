@@ -12,31 +12,32 @@
         <NavigationView x:Name="NavigationViewControl" IsBackEnabled="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" Background="#5B3B23">
             <NavigationView.MenuItems>
                 <NavigationViewItemHeader Content="MENU" Foreground="Black" HorizontalAlignment="Center" FontSize="50"/>
-                <NavigationViewItem Content="ACCUEIL" x:Name="Home" Tapped="Home_Tapped" />
+                <NavigationViewItem Content="ACCUEIL" x:Name="Home" Tapped="Home_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="FRANCAIS" x:Name="Fr" />
-                <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" />
-                <NavigationViewItem Content="Lexique" x:Name="Fr_2" />
-                <NavigationViewItem Content="Grammaire" x:Name="Fr_3" />
-                <NavigationViewItem Content="Orthographe" x:Name="Fr_4" />
+                <NavigationViewItem Content="FRANCAIS" x:Name="Fr" Tapped="btnFrancais_Tapped"/>
+                <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" Tapped="btnFrConjug_Tapped"/>
+                <NavigationViewItem Content="Lexique" x:Name="Fr_2" Tapped="btnFrLexique_Tapped"/>
+                <NavigationViewItem Content="Grammaire" x:Name="Fr_3" Tapped="btnFrGram_Tapped"/>
+                <NavigationViewItem Content="Orthographe" x:Name="Fr_4" Tapped="btnFrOrtho_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="MATHEMATIQUES" x:Name="Maths" Tapped="btnMaths_Tapped" />
-                <NavigationViewItem Content="Géométrie" x:Name="M_1" />
-                <NavigationViewItem Content="Calcul" x:Name="M_2" />
-                <NavigationViewItem Content="Mesures" x:Name="M_3" />
-                <NavigationViewItem Content="Numérotation" x:Name="M_4" />
+                <NavigationViewItem Content="MATHEMATIQUES" x:Name="Maths" Tapped="btnMaths_Tapped"/>
+                <NavigationViewItem Content="Géométrie" x:Name="M_1" Tapped="btnMgeo_Tapped"/>
+                <NavigationViewItem Content="Calcul" x:Name="M_2" Tapped="btnMcalcul_Tapped"/>
+                <NavigationViewItem Content="Mesures" x:Name="M_3" Tapped="btnMmesures_Tapped"/>
+                <NavigationViewItem Content="Numérotation" x:Name="M_4" Tapped="btnMnum_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="HISTOIRE" x:Name="Hist" />
-                <NavigationViewItem Content="Moyen âge" x:Name="H_1" />
-                <NavigationViewItem Content="Temps Modernes" x:Name="H_2" />
-                <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" />
-                <NavigationViewItem Content="Préhistoire" x:Name="H_4" />
+                <NavigationViewItem Content="HISTOIRE" x:Name="Hist"/>
+                <NavigationViewItem Content="Moyen âge" x:Name="H_1" Tapped="btnHma_Tapped"/>
+                <NavigationViewItem Content="Temps Modernes" x:Name="H_2" Tapped="btnHtm_Tapped"/>
+                <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" Tapped="btnHec_Tapped"/>
+                <NavigationViewItem Content="Préhistoire" x:Name="H_4" Tapped="btnHp_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="AIDE" x:Name="Help" />
+                <NavigationViewItem Content="AIDE" x:Name="Help" Tapped="btnHelp_Tapped"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
                 <Grid Background="#5B3B23" Margin="-46,-5,0,-27">
                     <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+                    <Image x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Left" Margin="465,7,0,39" Width="20"/>
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
