@@ -1,5 +1,11 @@
-# projetEnvWin RENDU 09/01/2021 MINUIT
+# projetEnvWin
 repo propre du projet env win
+
+## Rendu
+samedi 09/01/2021 MINUIT
+
+## Soutenance
+lundi 04/01/2021 à 16h30 - 15 minutes
 
 ## Sujet de l'application
 application permettant de tester les connaissances en fin de CM2
