@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnvWindowsProjectQuizz.Données
+namespace projetEnvWin.Données
 {
     class Eleves : ObservableCollection<Eleve>
     { 
