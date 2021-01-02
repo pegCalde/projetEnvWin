@@ -55,9 +55,7 @@
                             <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="7*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Choix élève :" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-                        <ComboBox x:Name="choixEleves" Grid.Column="1" SelectionChanged="choixEleves_SelectionChanged" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="1,0,19,0" Height="38" Background="LightGray" Foreground="Black" BorderBrush="Gray"/>
-                        <Button x:Name="btnValider" Click="btnValider_Click" Grid.Column="1" Content="Valider" Margin="194,86,0,0" CornerRadius="7,7,7,7" Width="89" Grid.RowSpan="2" VerticalAlignment="Top" Background="#FF686868"/>
+                        <TextBlock Grid.Row="0" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,42,0,0" Grid.Column="1"></TextBlock>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
