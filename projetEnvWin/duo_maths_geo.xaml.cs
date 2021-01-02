@@ -20,9 +20,9 @@ namespace projetEnvWin
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class duo_maths_calcul : Page
+    public sealed partial class duo_maths_geo : Page
     {
-        public duo_maths_calcul()
+        public duo_maths_geo()
         {
             this.InitializeComponent();
         }
