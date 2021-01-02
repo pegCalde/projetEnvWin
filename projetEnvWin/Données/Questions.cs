@@ -38,32 +38,6 @@ namespace projetEnvWin.Données
                 Add(new Question("Quel baton est le plus long ?"));
                 Add(new Question("Voici la taille de 4 enfants. Quel est le plus petit ?"));
                 Add(new Question("Qu'est ce qui mesure autant que 300 cm ?"));
-
-            /*FRANCAIS*/
-                /**CONJUGAISON**/
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                /**GRAMMAIRE**/
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                /**ORTHOGRAPHE**/
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                /**LEXIQUE**/
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
-                Add(new Question(""));
         }
 
             public Question GetQuestion(String enonce)
