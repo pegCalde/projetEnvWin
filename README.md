@@ -35,11 +35,11 @@ application permettant de tester les connaissances en fin de CM2
 - mettre icône maison pr retourner à l'accueil AFFICHAGE OK
 
 ### 02/01/2021
-- faire en sorte que duo maths et histoire s'affichent en mode paysage DUO MATHS -> VOIR SI ON A LE TPS POUR LE FAIRE SINON QUE HISTOIRE A METTRE EN PAYSAGE
+- faire en sorte que histoire s'affiche en mode paysage
 - afficher les questions maths
 - afficher réponses maths -> tapped
 - chrono maths VOIR SI ON A LE TPS POUR LE FAIRE SINON ON FAIT PAS
-- mettre en place fonctionnement duo maths -> qd 1 élève a faux, ca passe à l'autre élève DUO -> VOIR SI ON A LE TPS POUR LE FAIRE SINON ON FAIT QUE SOLO
+- mettre en place fonctionnement duo maths -> qd 1 élève a faux, ca passe à l'autre élève ABANDONNE -> MANQUE DE TEMPS
 - afficher les questions Fr
 - afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
 - bouton 'valider' pr réponses formulaire Fr
