@@ -43,8 +43,6 @@ application permettant de tester les connaissances en fin de CM2
 - afficher les questions Fr
 - afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
 - bouton 'valider' pr réponses formulaire Fr
-- mettre en place double tap pr mettre réponse sur frise Histoire
-- bouton 'valider' pr réponses frise Histoire
 - mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge
 - afficher notes Fr
 - afficher notes Maths
@@ -56,6 +54,8 @@ application permettant de tester les connaissances en fin de CM2
 - écriture Q/A FRANCAIS EN COURS
 
 ### 03/01/2021
+- mettre en place double tap pr mettre réponse sur frise Histoire
+- bouton 'valider' pr réponses frise Histoire
 - powerpoint présentation PEG -> DIMANCHE APREM
 - résolution des bugs
 - vérifier affichage sur ttes les pages
