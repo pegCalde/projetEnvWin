@@ -40,14 +40,15 @@ application permettant de tester les connaissances en fin de CM2
 - afficher les questions Fr
 - afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
 - bouton 'valider' pr réponses formulaire Fr
-- mettre en place double tap pr mettre réponse sur frise Histoire PEG
-- bouton 'valider' pr réponses frise Histoire PEG
+- mettre en place double tap pr mettre réponse sur frise Histoire
+- bouton 'valider' pr réponses frise Histoire
 - mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge
 - afficher notes Fr
 - afficher notes Maths
 - afficher notes Histoire
-- lier pages aux boutons du menu PEG EN COURS
-- mettre icône maison pr retourner à l'accueil OK
+- lier pages aux boutons du menu OK
+- mettre icône maison pr retourner à l'accueil FONCTIONNEL OK
+- création fichiers questions + réponses pr faire l'affichage EN COURS
 
 ### 03/01/2021
 - powerpoint présentation PEG -> DIMANCHE APREM
@@ -56,5 +57,5 @@ application permettant de tester les connaissances en fin de CM2
 - commenter le code
 
 ## BUGS
-- le menu reste visible sur certaines pages
+- le menu reste visible sur certaines pages ce qui empêche de finir de mettre bien les input (sur les parties histoire)
 - soucis couleur sur certains textes, la couleur n'est jamais prise en compte
