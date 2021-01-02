@@ -21,6 +21,9 @@ application permettant de tester les connaissances en fin de CM2
 
 ## NOTE
 - choisir le visuel iphone 6 pr tt mettre en page
+- je n'ai pas modifier les pages maths duo parce que :
+  - je ne suis pas sure qu'on ai le tps de faire le mode duo
+  - je voulais voir avec toi si ca vaut le coup de faire des pages duo maths si au fianl c'est juste un ajout d'un 2e élève
 
 ## TO DO
 ### 01/01/2021
