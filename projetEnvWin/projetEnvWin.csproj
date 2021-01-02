@@ -125,8 +125,8 @@
     <Compile Include="ClassesMétiers\Question.cs" />
     <Compile Include="ClassesMétiers\Reponse.cs" />
     <Compile Include="Données\Eleves.cs" />
-    <Compile Include="duo_maths_mesures.xaml.cs">
-      <DependentUpon>duo_maths_mesures.xaml</DependentUpon>
+    <Compile Include="duo_maths_num.xaml.cs">
+      <DependentUpon>duo_maths_num.xaml</DependentUpon>
     </Compile>
     <Compile Include="HistoirePage.xaml.cs">
       <DependentUpon>HistoirePage.xaml</DependentUpon>
@@ -174,7 +174,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="duo_maths_mesures.xaml">
+    <Page Include="duo_maths_num.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
