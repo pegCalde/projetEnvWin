@@ -119,8 +119,20 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ClassesMétiers\Eleve.cs" />
+    <Compile Include="ClassesMétiers\Matiere.cs" />
+    <Compile Include="ClassesMétiers\Partie.cs" />
+    <Compile Include="ClassesMétiers\Question.cs" />
+    <Compile Include="ClassesMétiers\Reponse.cs" />
+    <Compile Include="Données\Eleves.cs" />
+    <Compile Include="HistoirePage.xaml.cs">
+      <DependentUpon>HistoirePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MathsPage.xaml.cs">
+      <DependentUpon>MathsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -130,6 +142,21 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\back-button-blc.png" />
+    <Content Include="Assets\back-button-brun.png" />
+    <Content Include="Assets\back-button.png" />
+    <Content Include="Assets\frise_epoquecontemporaine_vide.png" />
+    <Content Include="Assets\frise_moyenage_vide.png" />
+    <Content Include="Assets\frise_prehistoire_vide.png" />
+    <Content Include="Assets\frise_tpsmodernes_vide.png" />
+    <Content Include="Assets\home-icon-blc.png" />
+    <Content Include="Assets\home-icon-brun.png" />
+    <Content Include="Assets\home-icon.png" />
+    <Content Include="Assets\library-books-blc.png" />
+    <Content Include="Assets\library-books-brun.png" />
+    <Content Include="Assets\library-books.png" />
+    <Content Include="Assets\speech-bubble-blc.png" />
+    <Content Include="Assets\speech-bubble.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -144,9 +171,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="HistoirePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MathsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
