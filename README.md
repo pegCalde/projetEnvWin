@@ -51,7 +51,9 @@ application permettant de tester les connaissances en fin de CM2
 - afficher notes Histoire
 - lier pages aux boutons du menu OK
 - mettre icône maison pr retourner à l'accueil FONCTIONNEL OK
-- création fichiers questions + réponses pr faire l'affichage EN COURS
+- création fichiers questions + réponses pr faire l'affichage OK
+- écriture Q/A MATHS OK
+- écriture Q/A FRANCAIS EN COURS
 
 ### 03/01/2021
 - powerpoint présentation PEG -> DIMANCHE APREM
