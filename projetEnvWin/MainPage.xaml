@@ -14,7 +14,7 @@
                 <NavigationViewItemHeader Content="MENU" Foreground="Black" HorizontalAlignment="Center" FontSize="50"/>
                 <NavigationViewItem Content="ACCUEIL" x:Name="Home" />
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="FRANCAIS" x:Name="Fr" />
+                <NavigationViewItem Content="FRANCAIS" x:Name="Fr"/>
                 <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" />
                 <NavigationViewItem Content="Lexique" x:Name="Fr_2" />
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3" />
@@ -30,13 +30,13 @@
                 <NavigationViewItem Content="Moyen âge" x:Name="H_1" />
                 <NavigationViewItem Content="Temps Modernes" x:Name="H_2" />
                 <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" />
-                <NavigationViewItem Content="Appris en CM1" x:Name="H_4" />
+                <NavigationViewItem Content="Préhistoire" x:Name="H_4" />
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="AIDE" x:Name="Help" />
             </NavigationView.MenuItems>
             <NavigationView.Header>
-                <Grid Background="#FBFBC6" Margin="-46,-5,0,-27">
-                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+                <Grid Background="#5B3B23" Margin="-46,-5,0,-27">
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
@@ -57,7 +57,7 @@
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="Choix élève :" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
                         <ComboBox x:Name="choixEleves" Grid.Column="1" SelectionChanged="choixEleves_SelectionChanged" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="1,0,19,0" Height="38" Background="LightGray" Foreground="Black" BorderBrush="Gray"/>
-                        <Button x:Name="btnValider" Click="btnValider_Click" Grid.Column="1" Content="Valider" Margin="270,86,0,0" CornerRadius="7,7,7,7" Width="89" Grid.RowSpan="2" VerticalAlignment="Top" Background="#FFA2A2A2"/>
+                        <Button x:Name="btnValider" Click="btnValider_Click" Grid.Column="1" Content="Valider" Margin="194,86,0,0" CornerRadius="7,7,7,7" Width="89" Grid.RowSpan="2" VerticalAlignment="Top" Background="#FF686868"/>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -110,5 +110,5 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-    </Grid>      
+    </Grid>
 </Page>

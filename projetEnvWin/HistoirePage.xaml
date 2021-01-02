@@ -30,13 +30,13 @@
                 <NavigationViewItem Content="Moyen âge" x:Name="H_1" />
                 <NavigationViewItem Content="Temps Modernes" x:Name="H_2" />
                 <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" />
-                <NavigationViewItem Content="Appris en CM1" x:Name="H_4" />
+                <NavigationViewItem Content="Préhistoire" x:Name="H_4" />
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="AIDE" x:Name="Help" />
             </NavigationView.MenuItems>
             <NavigationView.Header>
-                <Grid Background="#F8F8D9" Margin="-46,-5,0,-27">
-                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+                <Grid Background="#5B3B23" Margin="-46,-5,0,-27">
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
@@ -46,7 +46,7 @@
                         <RowDefinition Height="8*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" Margin="0,6,0,500" Grid.RowSpan="2">
+                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" Margin="0,-1,0,0">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="7*"/>
                             <RowDefinition Height="3*"/>
@@ -55,7 +55,9 @@
                             <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="7*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Row="0" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,42,0,0" Grid.Column="1"></TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Choix élève :" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+                        <ComboBox x:Name="choixEleves" Grid.Column="1" SelectionChanged="choixEleves_SelectionChanged" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="1,0,19,0" Height="38" Background="LightGray" Foreground="Black" BorderBrush="Gray"/>
+                        <Button x:Name="btnValider" Click="btnValider_Click" Grid.Column="1" Content="Valider" Margin="194,86,0,0" CornerRadius="7,7,7,7" Width="89" Grid.RowSpan="2" VerticalAlignment="Top" Background="#FF686868"/>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -87,7 +89,7 @@
                                 <TextBlock x:Name="btnEC" Text="Epoque Contemporaine" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
                             <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,165,-20,-44" Grid.ColumnSpan="3">
-                                <TextBlock x:Name="btnCM1" Text="Appris en CM1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
+                                <TextBlock x:Name="btnCM1" Text="Préhistoire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
                         </Grid>
                     </Grid>
