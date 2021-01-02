@@ -1,4 +1,4 @@
-# projetEnvWin
+# projetEnvWin RENDU 09/01/2021 MINUIT
 repo propre du projet env win
 
 ## Sujet de l'application
@@ -35,11 +35,18 @@ application permettant de tester les connaissances en fin de CM2
 - mettre icône maison pr retourner à l'accueil AFFICHAGE OK
 
 ### 02/01/2021
-- faire en sorte que histoire s'affiche en mode paysage
-- afficher les questions maths
-- afficher réponses maths -> tapped
+- lier pages aux boutons du menu OK
+- mettre icône maison pr retourner à l'accueil FONCTIONNEL OK
+- création fichiers questions + réponses pr faire l'affichage OK
+- écriture Q/A MATHS OK
 - chrono maths VOIR SI ON A LE TPS POUR LE FAIRE SINON ON FAIT PAS
 - mettre en place fonctionnement duo maths -> qd 1 élève a faux, ca passe à l'autre élève ABANDONNE -> MANQUE DE TEMPS
+
+### 03/01/2021
+- mettre en place double tap pr mettre réponse sur frise Histoire
+- bouton 'valider' pr réponses frise Histoire
+- afficher les questions maths
+- afficher réponses maths -> tapped
 - afficher les questions Fr
 - afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
 - bouton 'valider' pr réponses formulaire Fr
@@ -47,16 +54,14 @@ application permettant de tester les connaissances en fin de CM2
 - afficher notes Fr
 - afficher notes Maths
 - afficher notes Histoire
-- lier pages aux boutons du menu OK
-- mettre icône maison pr retourner à l'accueil FONCTIONNEL OK
-- création fichiers questions + réponses pr faire l'affichage OK
-- écriture Q/A MATHS OK
-- écriture Q/A FRANCAIS EN COURS
+- écriture Q/A FRANCAIS sous fichier txt EN COURS
+- gérer import fichier Q/A francais
+- faire en sorte que histoire s'affiche en mode paysage
 
-### 03/01/2021
-- mettre en place double tap pr mettre réponse sur frise Histoire
-- bouton 'valider' pr réponses frise Histoire
-- powerpoint présentation PEG -> DIMANCHE APREM
+### 04/01/2021
+- powerpoint présentation PEG -> LUNDI 13H30-15H30
+
+### 09/01/2021
 - résolution des bugs
 - vérifier affichage sur ttes les pages
 - commenter le code
