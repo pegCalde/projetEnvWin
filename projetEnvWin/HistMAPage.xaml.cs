@@ -21,10 +21,10 @@ namespace projetEnvWin
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class FrOrthoPage : Page
+    public sealed partial class HistMAPage : Page
     {
         Eleve currentStudent;
-        public FrOrthoPage()
+        public HistMAPage()
         {
             this.InitializeComponent();
         }
@@ -113,14 +113,8 @@ namespace projetEnvWin
             }
         }
         /*PARTIES HISTOIRE DANS MENU*/
-        
-        private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            if (currentStudent != null)
-            {
-                this.Frame.Navigate(typeof(HistMAPage), currentStudent);
-            }
-        }/*
+
+        /*
         private void btnHtm_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -134,7 +128,8 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(HistECPage), currentStudent);
             }
-        }/*
+        }
+        /*
         private void btnHp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -175,6 +170,14 @@ namespace projetEnvWin
             if (currentStudent != null)
             {
                 this.Frame.Navigate(typeof(FrGramPage), currentStudent);
+            }
+        }
+
+        private void btnFrOrtho_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (currentStudent != null)
+            {
+                this.Frame.Navigate(typeof(FrOrthoPage), currentStudent);
             }
         }
 

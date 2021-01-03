@@ -143,6 +143,9 @@
     <Compile Include="HistECPage.xaml.cs">
       <DependentUpon>HistECPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HistMAPage.xaml.cs">
+      <DependentUpon>HistMAPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HistoirePage.xaml.cs">
       <DependentUpon>HistoirePage.xaml</DependentUpon>
     </Compile>
@@ -222,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="HistECPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HistMAPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

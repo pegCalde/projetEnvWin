@@ -105,14 +105,14 @@ namespace projetEnvWin
             }
         }
         /*PARTIES HISTOIRE DANS MENU*/
-        /*
+        
         private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(MoyenAgePage), currentStudent);
+                this.Frame.Navigate(typeof(HistMAPage), currentStudent);
             }
-        }
+        }/*
         private void btnHtm_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)

@@ -27,7 +27,7 @@
                 <NavigationViewItem Content="Numérotation" x:Name="M_4" Tapped="btnMnum_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="HISTOIRE" x:Name="Hist"/>
-                <NavigationViewItem Content="Moyen âge" x:Name="H_1"/>
+                <NavigationViewItem Content="Moyen âge" x:Name="H_1" Tapped="btnHma_Tapped"/>
                 <NavigationViewItem Content="Temps Modernes" x:Name="H_2"/>
                 <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" Tapped="btnHec_Tapped"/>
                 <NavigationViewItem Content="Préhistoire" x:Name="H_4"/>
@@ -78,7 +78,7 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="5*"/>
                             </Grid.ColumnDefinitions>
-                            <Grid Background="#5B3B23" Margin="-20,-157,-20,280" Grid.ColumnSpan="3" CornerRadius="10" >
+                            <Grid Background="#5B3B23" Margin="-20,-157,-20,280" Grid.ColumnSpan="3" CornerRadius="10" Tapped="btnHma_Tapped">
                                 <TextBlock x:Name="btnMA" Text="Moyen âge" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
                             <Grid Grid.Column="0" Background="#5B3B23" Margin="-20,-50,-20,171" Grid.ColumnSpan="3" CornerRadius="10">
