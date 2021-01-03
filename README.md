@@ -63,6 +63,7 @@ application permettant de tester les connaissances en fin de CM2
 - écriture Q/A FRANCAIS sous fichier txt EN COURS
 - gérer import fichier Q/A francais
 - faire en sorte que histoire s'affiche en mode paysage
+- faire la navigation entre toutes les pages tout en gardant l'eleve connecté OK
 
 ### 04/01/2021
 - powerpoint présentation PEG -> LUNDI 13H30-15H30
