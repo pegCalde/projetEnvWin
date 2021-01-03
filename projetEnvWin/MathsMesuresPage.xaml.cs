@@ -112,15 +112,16 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(HistMAPage), currentStudent);
             }
-        }/*
+        }
+
         private void btnHtm_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(TpsModernePage), currentStudent);
+                this.Frame.Navigate(typeof(HistTMPage), currentStudent);
             }
         }
-        */
+        
         private void btnHec_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)

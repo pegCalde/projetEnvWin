@@ -28,7 +28,7 @@
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="HISTOIRE" x:Name="Hist" Tapped="btnHistoire_Tapped"/>
                 <NavigationViewItem Content="Moyen âge" x:Name="H_1" Tapped="btnHma_Tapped"/>
-                <NavigationViewItem Content="Temps Modernes" x:Name="H_2"/>
+                <NavigationViewItem Content="Temps Modernes" x:Name="H_2" Tapped="btnHtm_Tapped"/>
                 <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" Tapped="btnHec_Tapped"/>
                 <NavigationViewItem Content="Préhistoire" x:Name="H_4" Tapped="btnHp_Tapped"/>
                 <NavigationViewItemSeparator />
