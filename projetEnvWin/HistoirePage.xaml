@@ -15,7 +15,7 @@
                 <NavigationViewItem Content="ACCUEIL" x:Name="Home" Tapped="Home_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="FRANCAIS" x:Name="Fr" Tapped="btnFrancais_Tapped"/>
-                <NavigationViewItem Content="Conjugaison" x:Name="Fr_1"/>
+                <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" Tapped="btnFrConjug_Tapped"/>
                 <NavigationViewItem Content="Lexique" x:Name="Fr_2" />
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3" />
                 <NavigationViewItem Content="Orthographe" x:Name="Fr_4" />

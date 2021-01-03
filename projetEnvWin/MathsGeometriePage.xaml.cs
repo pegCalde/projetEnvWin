@@ -144,14 +144,15 @@ namespace projetEnvWin
         }
 
         /*PARTIES FRANCAIS DANS MENU*/
-        /*
+        
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(ConjugaisonPage), currentStudent);
+                this.Frame.Navigate(typeof(FrConjugPage), currentStudent);
             }
         }
+        /*
         private void btnFrLexique_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
