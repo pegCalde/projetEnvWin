@@ -81,13 +81,15 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(GeometriePage), currentStudent);
             }
         }
+        */
         private void btnMcalcul_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(CalculPage), currentStudent);
+                this.Frame.Navigate(typeof(MathsCalcul), currentStudent);
             }
         }
+        /*
         private void btnMmesures_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)

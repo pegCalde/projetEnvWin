@@ -22,7 +22,7 @@
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="MATHEMATIQUES" x:Name="Maths"/>
                 <NavigationViewItem Content="Géométrie" x:Name="M_1"/>
-                <NavigationViewItem Content="Calcul" x:Name="M_2"/>
+                <NavigationViewItem Content="Calcul" x:Name="M_2" Tapped="btnMcalcul_Tapped"/>
                 <NavigationViewItem Content="Mesures" x:Name="M_3"/>
                 <NavigationViewItem Content="Numérotation" x:Name="M_4"/>
                 <NavigationViewItemSeparator />
@@ -81,7 +81,7 @@
                             <Grid Background="#5B3B23" Margin="-20,-157,-20,280" Grid.ColumnSpan="3" CornerRadius="10" >
                                 <TextBlock x:Name="btnGeo" Text="Géométrie" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
-                            <Grid Grid.Column="0" Background="#5B3B23" Margin="-20,-50,-20,171" Grid.ColumnSpan="3" CornerRadius="10">
+                            <Grid Grid.Column="0" Background="#5B3B23" Margin="-20,-50,-20,171" Grid.ColumnSpan="3" CornerRadius="10" Tapped="btnMcalcul_Tapped">
                                 <TextBlock x:Name="btnCalcul" Text="Calcul" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30" Height="38"/>
                             </Grid>
                             <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,59,-20,60" Grid.ColumnSpan="3">
