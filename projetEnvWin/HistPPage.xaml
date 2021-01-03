@@ -85,31 +85,39 @@
                                 <!--Mettre les input des réponses à placer sur la frise-->
                                 <Image Source="/Assets/frise_prehistoire_vide.png" Margin="78,-44,-93,-146" Stretch="Fill"/>
                                 <StackPanel Orientation="Horizontal" Margin="114,82,530,-125" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBox x:Name="answerInput1" Header="" Width="89" Height="42"/>
+                                    <Grid Tapped="GridExo_Tapped" BorderBrush="Black" BorderThickness="1">
+                                        <TextBlock x:Name="answerInput1"  Width="89" Height="42" Tapped="GridExo_Tapped"/>
+                                    </Grid>
                                 </StackPanel>
-                                <StackPanel Orientation="Horizontal" Margin="631,85,-78,-133" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBox x:Name="answerInput2" Header="" Width="180" Height="46"/>
+                                <StackPanel Orientation="Horizontal" Margin="631,85,-78,-133" BorderBrush="Black" BorderThickness="1" >
+                                    <Grid Tapped="GridExo_Tapped">
+                                        <TextBlock x:Name="answerInput2"  Width="180" Height="46"/>
+                                    </Grid>                                 
                                 </StackPanel>
-                                <StackPanel Orientation="Horizontal" Margin="400,84,248,-126" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBox x:Name="answerInput3" Header="" Width="85" Height="40"/>
+                                <StackPanel Orientation="Horizontal" Margin="400,84,248,-126" BorderBrush="Black" BorderThickness="1">
+                                    <Grid  Tapped="GridExo_Tapped">
+                                        <TextBlock x:Name="answerInput3"  Width="85" Height="40"/>
+                                    </Grid>                                    
                                 </StackPanel>
-                                <StackPanel Orientation="Horizontal" Margin="234,85,411,-125" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBox x:Name="answerInput4" Header="" Width="88" Height="38"/>
+                                <StackPanel Orientation="Horizontal" Margin="234,85,411,-125" BorderBrush="Black" BorderThickness="1" >
+                                    <Grid Tapped="GridExo_Tapped">
+                                        <TextBlock x:Name="answerInput4"  Width="88" Height="38"/>
+                                    </Grid>                                    
                                 </StackPanel>
                             </Grid>
                             <Grid Margin="-73,75,-72,-48" BorderBrush="Black" BorderThickness="0,1,0,0" Grid.ColumnSpan="3">
                                 <!--Mettre les input des réponses à placer sur la frise-->
-                                <Grid Background="White" Margin="407,24,187,20" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBlock Text="sacre de Charlemagne" Foreground="Black" FontSize="12" Width="120" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Grid Background="White" Margin="300,50,600,50" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                    <TextBlock Text="sacre de Charlemagne" Foreground="Black" FontSize="12" Width="120" Height="20" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Grid>
-                                <Grid Background="White" Margin="10,22,530,20" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBlock Text="1er livre imprimé par Gutenberg" Foreground="Black" FontSize="12" Width="180" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Grid Background="White" Margin="500,50,400,50" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                    <TextBlock Text="1er livre imprimé par Gutenberg" Foreground="Black" FontSize="12" Width="200" Height="20" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Grid>
-                                <Grid Background="White" Margin="254,23,404,18" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBlock Text="Hégire" Foreground="Black" FontSize="12" Width="40" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Grid Background="White" Margin="700,50,200,50" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                    <TextBlock Text="Hégire" Foreground="Black" FontSize="12" Width="135" Height="20" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Grid>
-                                <Grid Background="White" Margin="596,29,58,15" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBlock Text="croisades" Foreground="Black" FontSize="12" Width="53" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Grid Background="White" Margin="900,50,8,50" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                    <TextBlock Text="croisades" Foreground="Black" FontSize="12" Width="135" Height="20" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Grid>
                             </Grid>
                         </Grid>

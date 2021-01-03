@@ -24,6 +24,7 @@ namespace projetEnvWin
     public sealed partial class HistPPage : Page
     {
         Eleve currentStudent;
+        List<TextBlock> textBlocks = new List<TextBlock>();
         public HistPPage()
         {
             this.InitializeComponent();
@@ -184,6 +185,29 @@ namespace projetEnvWin
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
+        }
+
+        private void GridExo_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Grid currentGrid = sender as Grid;
+            TextBlock currentText = currentGrid.Children[0] as TextBlock;
+
+            currentGrid.Background = new SolidColorBrush(Colors.White);
+
+            if(textBlocks.Count < 2)
+            {
+                textBlocks.Add(currentText);
+            }
+            if(textBlocks.Count == 2)
+            {
+                string tmp = textBlocks[0].Text;
+                textBlocks[0].Text = textBlocks[1].Text;
+                textBlocks[1].Text = tmp;
+                textBlocks.Clear();
+            }
+            
+            
+            
         }
     }
 }
