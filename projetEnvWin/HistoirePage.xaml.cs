@@ -1,4 +1,4 @@
-﻿using EnvWindowsProjectQuizz;
+﻿using projetEnvWin;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -71,7 +71,9 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsPage), currentStudent);
             }
         }
+
         /*PARTIES MATHS DANS MENU*/
+        /*
         private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -99,8 +101,9 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(NumerationPage), currentStudent);
             }
-        }
+        }*/
         /*PARTIES HISTOIRE DANS MENU*/
+        /*
         private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -129,8 +132,9 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(PrehistoirePage), currentStudent);
             }
         }
-
+        */
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
+        /*
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -138,7 +142,9 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrancaisPage), currentStudent);
             }
         }
+        */
         /*PARTIES FRANCAIS DANS MENU*/
+        /*
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -167,11 +173,12 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(OrthographePage), currentStudent);
             }
         }
-
+        */
         /*PAGE AIDE DANS MENU*/
+        /*
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
-        }
+        }*/
     }
 }

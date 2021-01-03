@@ -12,9 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using EnvWindowsProjectQuizz.Données;
+using projetEnvWin.Données;
 using Windows.UI;
-using EnvWindowsProjectQuizz;
+using projetEnvWin;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -76,6 +76,7 @@ namespace projetEnvWin
             }
         }
         /*PARTIES MATHS DANS MENU*/
+        /*
         private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -104,7 +105,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(NumerationPage), currentStudent);
             }
         }
-
+        */
         /*SECTION HISTOIRE DANS MENU + SUR ACCUEIL*/
         private void btnHistoire_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -114,6 +115,7 @@ namespace projetEnvWin
             }
         }
         /*PARTIES HISTOIRE DANS MENU*/
+        /*
         private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -142,8 +144,9 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(PrehistoirePage), currentStudent);
             }
         }
-
+        */
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
+        /*
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -151,7 +154,9 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrancaisPage), currentStudent);
             }
         }
+        */
         /*PARTIES FRANCAIS DANS MENU*/
+        /*
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -180,13 +185,14 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(OrthographePage), currentStudent);
             }
         }
-
+        */
         /*PAGE AIDE DANS MENU*/
+        /*
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
         }
-
+        */
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             if (e.Parameter == "")
