@@ -97,14 +97,15 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsMesuresPage), currentStudent);
             }
         }
-        /*
+        
         private void btnMnum_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(NumerationPage), currentStudent);
+                this.Frame.Navigate(typeof(MathsNumPage), currentStudent);
             }
-        }*/
+        }
+
         /*PARTIES HISTOIRE DANS MENU*/
         /*
         private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)

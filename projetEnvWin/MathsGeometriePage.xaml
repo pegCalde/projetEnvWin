@@ -23,8 +23,8 @@
                 <NavigationViewItem Content="MATHEMATIQUES" x:Name="Maths" Tapped="btnMaths_Tapped"/>
                 <NavigationViewItem Content="Géométrie" x:Name="M_1"/>
                 <NavigationViewItem Content="Calcul" x:Name="M_2" Tapped="btnMcalcul_Tapped"/>
-                <NavigationViewItem Content="Mesures" x:Name="M_3"/>
-                <NavigationViewItem Content="Numérotation" x:Name="M_4"/>
+                <NavigationViewItem Content="Mesures" x:Name="M_3" Tapped="btnMmesures_Tapped"/>
+                <NavigationViewItem Content="Numérotation" x:Name="M_4" Tapped="btnMnum_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="HISTOIRE" x:Name="Hist" Tapped="btnHistoire_Tapped"/>
                 <NavigationViewItem Content="Moyen âge" x:Name="H_1"/>

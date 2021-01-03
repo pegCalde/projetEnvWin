@@ -21,10 +21,10 @@ namespace projetEnvWin
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class MathsMesuresPage : Page
+    public sealed partial class MathsNumPage : Page
     {
         Eleve currentStudent;
-        public MathsMesuresPage()
+        public MathsNumPage()
         {
             this.InitializeComponent();
         }
@@ -70,6 +70,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsPage), currentStudent);
             }
         }
+
         /*PARTIES MATHS DANS MENU*/
 
         private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
@@ -87,15 +88,15 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsCalculPage), currentStudent);
             }
         }
-        
-        private void btnMnum_Tapped(object sender, TappedRoutedEventArgs e)
+
+        private void btnMmesures_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(MathsNumPage), currentStudent);
+                this.Frame.Navigate(typeof(MathsMesuresPage), currentStudent);
             }
         }
-
+        
         /*SECTION HISTOIRE DANS MENU + SUR ACCUEIL*/
         private void btnHistoire_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -133,7 +134,8 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(PrehistoirePage), currentStudent);
             }
-        }*/
+        }
+        */
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
 
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
@@ -143,6 +145,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrancaisPage), currentStudent);
             }
         }
+
         /*PARTIES FRANCAIS DANS MENU*/
         /*
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
@@ -172,13 +175,14 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(OrthographePage), currentStudent);
             }
-        }*/
-
+        }
+        */
         /*PAGE AIDE DANS MENU*/
         /*
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
-        }*/
+        }
+        */
     }
 }

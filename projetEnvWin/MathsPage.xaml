@@ -24,7 +24,7 @@
                 <NavigationViewItem Content="Géométrie" x:Name="M_1" Tapped="btnMgeo_Tapped"/>
                 <NavigationViewItem Content="Calcul" x:Name="M_2" Tapped="btnMcalcul_Tapped"/>
                 <NavigationViewItem Content="Mesures" x:Name="M_3" Tapped="btnMmesures_Tapped"/>
-                <NavigationViewItem Content="Numérotation" x:Name="M_4"/>
+                <NavigationViewItem Content="Numérotation" x:Name="M_4" Tapped="btnMnum_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="HISTOIRE" x:Name="Hist" Tapped="btnHistoire_Tapped"/>
                 <NavigationViewItem Content="Moyen âge" x:Name="H_1"/>
@@ -87,7 +87,7 @@
                             <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,59,-20,60" Grid.ColumnSpan="3" Tapped="btnMmesures_Tapped">
                                 <TextBlock x:Name="btnMesures" Text="Mesures" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
-                            <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,165,-20,-44" Grid.ColumnSpan="3">
+                            <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,165,-20,-44" Grid.ColumnSpan="3" Tapped="btnMnum_Tapped">
                                 <TextBlock x:Name="btnNum" Text="Numérotation" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
                         </Grid>

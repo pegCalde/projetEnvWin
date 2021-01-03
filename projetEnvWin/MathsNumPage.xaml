@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="projetEnvWin.MathsMesuresPage"
+    x:Class="projetEnvWin.MathsNumPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:projetEnvWin"
@@ -15,24 +15,24 @@
                 <NavigationViewItem Content="ACCUEIL" x:Name="Home" Tapped="Home_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="FRANCAIS" x:Name="Fr" Tapped="btnFrancais_Tapped"/>
-                <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" />
-                <NavigationViewItem Content="Lexique" x:Name="Fr_2" />
+                <NavigationViewItem Content="Conjugaison" x:Name="Fr_1"/>
+                <NavigationViewItem Content="Lexique" x:Name="Fr_2"/>
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3"/>
                 <NavigationViewItem Content="Orthographe" x:Name="Fr_4"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="MATHEMATIQUES" x:Name="Maths"/>
+                <NavigationViewItem Content="MATHEMATIQUES" x:Name="Maths" Tapped="btnMaths_Tapped"/>
                 <NavigationViewItem Content="Géométrie" x:Name="M_1" Tapped="btnMgeo_Tapped"/>
                 <NavigationViewItem Content="Calcul" x:Name="M_2" Tapped="btnMcalcul_Tapped"/>
-                <NavigationViewItem Content="Mesures" x:Name="M_3"/>
-                <NavigationViewItem Content="Numérotation" x:Name="M_4" Tapped="btnMnum_Tapped"/>
+                <NavigationViewItem Content="Mesures" x:Name="M_3" Tapped="btnMmesures_Tapped"/>
+                <NavigationViewItem Content="Numérotation" x:Name="M_4"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="HISTOIRE" x:Name="Hist" Tapped="btnHistoire_Tapped"/>
-                <NavigationViewItem Content="Moyen âge" x:Name="H_1" />
-                <NavigationViewItem Content="Temps Modernes" x:Name="H_2" />
-                <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" />
-                <NavigationViewItem Content="Préhistoire" x:Name="H_4" />
+                <NavigationViewItem Content="Moyen âge" x:Name="H_1"/>
+                <NavigationViewItem Content="Temps Modernes" x:Name="H_2"/>
+                <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3"/>
+                <NavigationViewItem Content="Préhistoire" x:Name="H_4"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="AIDE" x:Name="Help" />
+                <NavigationViewItem Content="AIDE" x:Name="Help"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
                 <Grid Background="#5B3B23" Margin="-46,-5,0,-27">

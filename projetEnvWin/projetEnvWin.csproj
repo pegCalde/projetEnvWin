@@ -143,6 +143,9 @@
     <Compile Include="MathsMesuresPage.xaml.cs">
       <DependentUpon>MathsMesuresPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MathsNumPage.xaml.cs">
+      <DependentUpon>MathsNumPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MathsPage.xaml.cs">
       <DependentUpon>MathsPage.xaml</DependentUpon>
     </Compile>
@@ -204,6 +207,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MathsMesuresPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MathsNumPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

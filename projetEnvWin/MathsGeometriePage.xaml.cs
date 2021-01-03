@@ -79,22 +79,21 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsCalculPage), currentStudent);
             }
         }
-        /*
         private void btnMmesures_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(MesuresPage), currentStudent);
+                this.Frame.Navigate(typeof(MathsMesuresPage), currentStudent);
             }
         }
         private void btnMnum_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(NumerationPage), currentStudent);
+                this.Frame.Navigate(typeof(MathsNumPage), currentStudent);
             }
         }
-        */
+        
         /*SECTION HISTOIRE DANS MENU + SUR ACCUEIL*/
         private void btnHistoire_Tapped(object sender, TappedRoutedEventArgs e)
         {
