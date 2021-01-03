@@ -154,14 +154,14 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrConjugPage), currentStudent);
             }
         }
-        /*
+        
         private void btnFrLexique_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(LexiquePage), currentStudent);
+                this.Frame.Navigate(typeof(FrLexPage), currentStudent);
             }
-        }*/
+        }
 
         private void btnFrGram_Tapped(object sender, TappedRoutedEventArgs e)
         {

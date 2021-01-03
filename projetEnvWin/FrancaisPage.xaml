@@ -16,7 +16,7 @@
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="FRANCAIS" x:Name="Fr"/>
                 <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" Tapped="btnFrConjug_Tapped"/>
-                <NavigationViewItem Content="Lexique" x:Name="Fr_2"/>
+                <NavigationViewItem Content="Lexique" x:Name="Fr_2" Tapped="btnFrLexique_Tapped"/>
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3" Tapped="btnFrGram_Tapped"/>
                 <NavigationViewItem Content="Orthographe" x:Name="Fr_4"/>
                 <NavigationViewItemSeparator />
@@ -81,7 +81,7 @@
                             <Grid Background="#5B3B23" Margin="-20,-157,-20,280" Grid.ColumnSpan="3" CornerRadius="10" Tapped="btnFrConjug_Tapped">
                                 <TextBlock x:Name="btnConj" Text="Conjugaison" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
-                            <Grid Grid.Column="0" Background="#5B3B23" Margin="-20,-50,-20,171" Grid.ColumnSpan="3" CornerRadius="10">
+                            <Grid Grid.Column="0" Background="#5B3B23" Margin="-20,-50,-20,171" Grid.ColumnSpan="3" CornerRadius="10" Tapped="btnFrLexique_Tapped">
                                 <TextBlock x:Name="btnLex" Text="Lexique" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30" Height="38"/>
                             </Grid>
                             <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,59,-20,60" Grid.ColumnSpan="3" Tapped="btnFrGram_Tapped">
