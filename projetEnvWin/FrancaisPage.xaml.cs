@@ -135,14 +135,14 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(HistECPage), currentStudent);
             }
-        }/*
+        }
         private void btnHp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(PrehistoirePage), currentStudent);
+                this.Frame.Navigate(typeof(HistPPage), currentStudent);
             }
-        }*/
+        }
         /*PARTIES FRANCAIS DANS MENU*/
         
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)

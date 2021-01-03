@@ -127,15 +127,15 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(TpsModernePage), currentStudent);
             }
-        }
-        /*
+        }*/
+        
         private void btnHp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(PrehistoirePage), currentStudent);
+                this.Frame.Navigate(typeof(HistPPage), currentStudent);
             }
-        }*/
+        }
 
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
 
