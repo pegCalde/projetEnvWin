@@ -29,7 +29,7 @@
                 <NavigationViewItem Content="HISTOIRE" x:Name="Hist"/>
                 <NavigationViewItem Content="Moyen âge" x:Name="H_1"/>
                 <NavigationViewItem Content="Temps Modernes" x:Name="H_2"/>
-                <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3"/>
+                <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" Tapped="btnHec_Tapped"/>
                 <NavigationViewItem Content="Préhistoire" x:Name="H_4"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="AIDE" x:Name="Help"/>
@@ -84,7 +84,7 @@
                             <Grid Grid.Column="0" Background="#5B3B23" Margin="-20,-50,-20,171" Grid.ColumnSpan="3" CornerRadius="10">
                                 <TextBlock x:Name="btnTM" Text="Temps Modernes" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30" Height="38"/>
                             </Grid>
-                            <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,59,-20,60" Grid.ColumnSpan="3">
+                            <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,59,-20,60" Grid.ColumnSpan="3" Tapped="btnHec_Tapped">
                                 <TextBlock x:Name="btnEC" Text="Epoque Contemporaine" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
                             <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,165,-20,-44" Grid.ColumnSpan="3">

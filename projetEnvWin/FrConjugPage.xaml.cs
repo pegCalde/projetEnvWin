@@ -127,14 +127,14 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(TpsModernePage), currentStudent);
             }
-        }
+        }*/
         private void btnHec_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(EpoqueContemporainePage), currentStudent);
+                this.Frame.Navigate(typeof(HistECPage), currentStudent);
             }
-        }
+        }/*
         private void btnHp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)

@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="projetEnvWin.FrLexPage"
+    x:Class="projetEnvWin.HistECPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:projetEnvWin"
@@ -16,7 +16,7 @@
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="FRANCAIS" x:Name="Fr" Tapped="btnFrancais_Tapped"/>
                 <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" Tapped="btnFrConjug_Tapped"/>
-                <NavigationViewItem Content="Lexique" x:Name="Fr_2"/>
+                <NavigationViewItem Content="Lexique" x:Name="Fr_2" Tapped="btnFrLexique_Tapped"/>
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3" Tapped="btnFrGram_Tapped"/>
                 <NavigationViewItem Content="Orthographe" x:Name="Fr_4" Tapped="btnFrOrtho_Tapped"/>
                 <NavigationViewItemSeparator />
@@ -29,7 +29,7 @@
                 <NavigationViewItem Content="HISTOIRE" x:Name="Hist" Tapped="btnHistoire_Tapped"/>
                 <NavigationViewItem Content="Moyen âge" x:Name="H_1"/>
                 <NavigationViewItem Content="Temps Modernes" x:Name="H_2"/>
-                <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" Tapped="btnHec_Tapped"/>
+                <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3"/>
                 <NavigationViewItem Content="Préhistoire" x:Name="H_4"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="AIDE" x:Name="Help"/>
@@ -37,7 +37,7 @@
             <NavigationView.Header>
                 <Grid Background="#5B3B23" Margin="-46,-5,0,-27">
                     <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
-                    <Image x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Left" Margin="465,7,0,39" Width="20"/>
+                    <Image x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Left" Margin="690,7,0,39" Width="20"/>
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
@@ -47,7 +47,7 @@
                         <RowDefinition Height="8*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" Margin="0,0,0,506" Grid.RowSpan="2">
+                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" Margin="0,-2,0,1" Grid.RowSpan="2">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="7*"/>
                             <RowDefinition Height="3*"/>
@@ -74,15 +74,43 @@
 
                         <Grid Grid.Row="3" Grid.Column="1">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="5*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="265*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="264*"/>
                             </Grid.ColumnDefinitions>
-                            <Grid Background="#5B3B23" Margin="-44,-229,-43,372" Grid.ColumnSpan="3" >
-                                <TextBlock x:Name="btnfrTitre" Text="Français" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="20" Margin="0,5,0,0"/>
+                            <Grid Background="#5B3B23" Margin="-74,-125,-72,186" Grid.ColumnSpan="3">
+                                <TextBlock Text="Histoire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold"/>
                             </Grid>
-                            <Grid Grid.Column="0" Margin="-20,-50,-20,171" Grid.ColumnSpan="3">
-                                <!--Formulaire-->
+                            <Grid Margin="-163,-60,10,300" Grid.ColumnSpan="3">
+                                <!--Mettre les input des réponses à placer sur la frise-->
+                                <Image Source="/Assets/frise_epoquecontemporaine_vide.png" Margin="19,-44,-93,-146" Stretch="Fill"/>
+                                <StackPanel Orientation="Horizontal" Margin="424,70,220,-108" BorderBrush="Orange" BorderThickness="1">
+                                    <TextBox x:Name="answerInput1" Header="" Width="89" Height="36"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="148,70,447,-108" BorderBrush="Orange" BorderThickness="1">
+                                    <TextBox x:Name="answerInput2" Header="" Width="138" Height="37"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="369,106,263,-135" BorderBrush="Orange" BorderThickness="1">
+                                    <TextBox x:Name="answerInput3" Header="" Width="87" Height="24"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="669,70,-1,-105" BorderBrush="Orange" BorderThickness="1">
+                                    <TextBox x:Name="answerInput4" Header="" Width="65" Height="34"/>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Margin="-73,75,-72,-48" BorderBrush="Black" BorderThickness="0,1,0,0" Grid.ColumnSpan="3">
+                                <!--Mettre les input des réponses à placer sur la frise-->
+                                <Grid Background="White" Margin="407,24,187,20" BorderBrush="Orange" BorderThickness="1">
+                                    <TextBlock Text="sacre de Charlemagne" Foreground="Black" FontSize="12" Width="120" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                                <Grid Background="White" Margin="10,22,530,20" BorderBrush="Orange" BorderThickness="1">
+                                    <TextBlock Text="1er livre imprimé par Gutenberg" Foreground="Black" FontSize="12" Width="180" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                                <Grid Background="White" Margin="254,23,404,18" BorderBrush="Orange" BorderThickness="1">
+                                    <TextBlock Text="Hégire" Foreground="Black" FontSize="12" Width="40" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                                <Grid Background="White" Margin="596,29,58,15" BorderBrush="Orange" BorderThickness="1">
+                                    <TextBlock Text="croisades" Foreground="Black" FontSize="12" Width="53" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
