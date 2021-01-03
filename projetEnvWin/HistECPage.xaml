@@ -32,7 +32,7 @@
                 <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3"/>
                 <NavigationViewItem Content="Préhistoire" x:Name="H_4" Tapped="btnHp_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="AIDE" x:Name="Help"/>
+                <NavigationViewItem Content="AIDE" x:Name="Help" Tapped="btnHelp_Tapped"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
                 <Grid Background="#5B3B23" Margin="-46,-5,0,-27">

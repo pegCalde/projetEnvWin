@@ -180,10 +180,10 @@ namespace projetEnvWin
         }
 
         /*PAGE AIDE DANS MENU*/
-        /*
+        
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
-        }*/
+        }
     }
 }
