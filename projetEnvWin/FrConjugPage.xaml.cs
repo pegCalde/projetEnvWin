@@ -154,14 +154,6 @@ namespace projetEnvWin
         }
 
         /*PARTIES FRANCAIS DANS MENU*/
-        
-        private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            if (currentStudent != null)
-            {
-                this.Frame.Navigate(typeof(FrConjugPage), currentStudent);
-            }
-        }
         /*
         private void btnFrLexique_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -169,14 +161,14 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(LexiquePage), currentStudent);
             }
-        }
+        }*/
         private void btnFrGram_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(GrammairePage), currentStudent);
+                this.Frame.Navigate(typeof(FrGramPage), currentStudent);
             }
-        }
+        }/*
         private void btnFrOrtho_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)

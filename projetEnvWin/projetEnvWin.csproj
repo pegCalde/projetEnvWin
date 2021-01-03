@@ -131,6 +131,9 @@
     <Compile Include="FrConjugPage.xaml.cs">
       <DependentUpon>FrConjugPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FrGramPage.xaml.cs">
+      <DependentUpon>FrGramPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HistoirePage.xaml.cs">
       <DependentUpon>HistoirePage.xaml</DependentUpon>
     </Compile>
@@ -194,6 +197,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FrConjugPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FrGramPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
