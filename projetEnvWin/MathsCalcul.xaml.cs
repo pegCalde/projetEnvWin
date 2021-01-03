@@ -72,21 +72,15 @@ namespace projetEnvWin
         }
 
         /*PARTIES MATHS DANS MENU*/
-        /*
+        
         private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(GeometriePage), currentStudent);
+                this.Frame.Navigate(typeof(MathsGeometriePage), currentStudent);
             }
         }
-        private void btnMcalcul_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            if (currentStudent != null)
-            {
-                this.Frame.Navigate(typeof(CalculPage), currentStudent);
-            }
-        }
+        /*
         private void btnMmesures_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)

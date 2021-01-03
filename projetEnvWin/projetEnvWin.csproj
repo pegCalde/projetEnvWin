@@ -137,6 +137,9 @@
     <Compile Include="MathsCalcul.xaml.cs">
       <DependentUpon>MathsCalcul.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MathsGeometriePage.xaml.cs">
+      <DependentUpon>MathsGeometriePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MathsPage.xaml.cs">
       <DependentUpon>MathsPage.xaml</DependentUpon>
     </Compile>
@@ -190,6 +193,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MathsCalcul.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MathsGeometriePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
