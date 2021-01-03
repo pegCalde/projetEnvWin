@@ -169,15 +169,15 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(FrLexPage), currentStudent);
             }
-        }/*
+        }
 
         private void btnFrOrtho_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(OrthographePage), currentStudent);
+                this.Frame.Navigate(typeof(FrOrthoPage), currentStudent);
             }
-        }*/
+        }
 
         /*PAGE AIDE DANS MENU*/
         /*

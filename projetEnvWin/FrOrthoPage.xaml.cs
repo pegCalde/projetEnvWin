@@ -21,10 +21,10 @@ namespace projetEnvWin
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class MathsGeometriePage : Page
+    public sealed partial class FrOrthoPage : Page
     {
         Eleve currentStudent;
-        public MathsGeometriePage()
+        public FrOrthoPage()
         {
             this.InitializeComponent();
         }
@@ -70,8 +70,16 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsPage), currentStudent);
             }
         }
-
         /*PARTIES MATHS DANS MENU*/
+
+        private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (currentStudent != null)
+            {
+                this.Frame.Navigate(typeof(MathsGeometriePage), currentStudent);
+            }
+        }
+
         private void btnMcalcul_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -79,6 +87,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsCalculPage), currentStudent);
             }
         }
+
         private void btnMmesures_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -86,6 +95,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsMesuresPage), currentStudent);
             }
         }
+
         private void btnMnum_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -93,7 +103,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsNumPage), currentStudent);
             }
         }
-        
+
         /*SECTION HISTOIRE DANS MENU + SUR ACCUEIL*/
         private void btnHistoire_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -131,8 +141,8 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(PrehistoirePage), currentStudent);
             }
-        }
-        */
+        }*/
+
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
 
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
@@ -144,7 +154,7 @@ namespace projetEnvWin
         }
 
         /*PARTIES FRANCAIS DANS MENU*/
-        
+
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -152,7 +162,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrConjugPage), currentStudent);
             }
         }
-        
+
         private void btnFrLexique_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -167,20 +177,12 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrGramPage), currentStudent);
             }
         }
-        private void btnFrOrtho_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            if (currentStudent != null)
-            {
-                this.Frame.Navigate(typeof(FrOrthoPage), currentStudent);
-            }
-        }
-        
+
         /*PAGE AIDE DANS MENU*/
         /*
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
-        }
-        */
+        }*/
     }
 }

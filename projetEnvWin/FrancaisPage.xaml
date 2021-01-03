@@ -18,7 +18,7 @@
                 <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" Tapped="btnFrConjug_Tapped"/>
                 <NavigationViewItem Content="Lexique" x:Name="Fr_2" Tapped="btnFrLexique_Tapped"/>
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3" Tapped="btnFrGram_Tapped"/>
-                <NavigationViewItem Content="Orthographe" x:Name="Fr_4"/>
+                <NavigationViewItem Content="Orthographe" x:Name="Fr_4" Tapped="btnFrOrtho_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="MATHEMATIQUES" x:Name="Maths" Tapped="btnMaths_Tapped"/>
                 <NavigationViewItem Content="Géométrie" x:Name="M_1" Tapped="btnMgeo_Tapped"/>
@@ -87,7 +87,7 @@
                             <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,59,-20,60" Grid.ColumnSpan="3" Tapped="btnFrGram_Tapped">
                                 <TextBlock x:Name="btnGram" Text="Grammaire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
-                            <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,165,-20,-44" Grid.ColumnSpan="3">
+                            <Grid Background="#5B3B23" CornerRadius="10" Margin="-20,165,-20,-44" Grid.ColumnSpan="3" Tapped="btnFrOrtho_Tapped">
                                 <TextBlock x:Name="btnOrtho" Text="Orthographe" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
                         </Grid>

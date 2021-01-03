@@ -170,15 +170,15 @@ namespace projetEnvWin
             {
                 this.Frame.Navigate(typeof(FrGramPage), currentStudent);
             }
-        }/*
+        }
         private void btnFrOrtho_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(OrthographePage), currentStudent);
+                this.Frame.Navigate(typeof(FrOrthoPage), currentStudent);
             }
         }
-        */
+        
         /*PAGE AIDE DANS MENU*/
         /*
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)

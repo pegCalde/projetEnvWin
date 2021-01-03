@@ -18,7 +18,7 @@
                 <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" Tapped="btnFrConjug_Tapped"/>
                 <NavigationViewItem Content="Lexique" x:Name="Fr_2" Tapped="btnFrLexique_Tapped"/>
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3" Tapped="btnFrGram_Tapped"/>
-                <NavigationViewItem Content="Orthographe" x:Name="Fr_4"/>
+                <NavigationViewItem Content="Orthographe" x:Name="Fr_4" Tapped="btnFrOrtho_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="MATHEMATIQUES" x:Name="Maths" Tapped="btnMaths_Tapped"/>
                 <NavigationViewItem Content="Géométrie" x:Name="M_1"/>
