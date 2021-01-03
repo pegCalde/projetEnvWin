@@ -14,7 +14,7 @@
                 <NavigationViewItemHeader Content="MENU" Foreground="Black" HorizontalAlignment="Center" FontSize="50"/>
                 <NavigationViewItem Content="ACCUEIL" x:Name="Home"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="FRANCAIS" x:Name="Fr"/>
+                <NavigationViewItem Content="FRANCAIS" x:Name="Fr" Tapped="btnFrancais_Tapped"/>
                 <NavigationViewItem Content="Conjugaison" x:Name="Fr_1"/>
                 <NavigationViewItem Content="Lexique" x:Name="Fr_2"/>
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3"/>
@@ -82,7 +82,7 @@
                             <Grid Background="#5B3B23" Margin="-21,-182,-19,300" Grid.ColumnSpan="3" CornerRadius="30" Tapped="btnHistoire_Tapped">
                                 <TextBlock x:Name="btnHistoire" Text="Histoire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
-                            <Grid Grid.Column="0" Background="#5B3B23" Margin="-21,-45,-19,160" Grid.ColumnSpan="3" CornerRadius="30">
+                            <Grid Grid.Column="0" Background="#5B3B23" Margin="-21,-45,-19,160" Grid.ColumnSpan="3" CornerRadius="30" Tapped="btnFrancais_Tapped">
                                 <TextBlock x:Name="btnFrancais" Text="Français" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30" Height="38"/>
                             </Grid>
                             <Grid Background="#5B3B23" CornerRadius="30" Margin="-21,92,-19,25" Grid.ColumnSpan="3" Tapped="btnMaths_Tapped">

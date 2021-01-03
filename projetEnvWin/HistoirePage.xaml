@@ -14,7 +14,7 @@
                 <NavigationViewItemHeader Content="MENU" Foreground="Black" HorizontalAlignment="Center" FontSize="50"/>
                 <NavigationViewItem Content="ACCUEIL" x:Name="Home" Tapped="Home_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="FRANCAIS" x:Name="Fr"/>
+                <NavigationViewItem Content="FRANCAIS" x:Name="Fr" Tapped="btnFrancais_Tapped"/>
                 <NavigationViewItem Content="Conjugaison" x:Name="Fr_1"/>
                 <NavigationViewItem Content="Lexique" x:Name="Fr_2" />
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3" />

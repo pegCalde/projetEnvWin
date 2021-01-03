@@ -146,7 +146,7 @@ namespace projetEnvWin
         }
         */
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
-        /*
+        
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -154,7 +154,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrancaisPage), currentStudent);
             }
         }
-        */
+        
         /*PARTIES FRANCAIS DANS MENU*/
         /*
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
