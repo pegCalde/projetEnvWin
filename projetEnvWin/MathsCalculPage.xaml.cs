@@ -21,10 +21,10 @@ namespace projetEnvWin
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class MathsCalcul : Page
+    public sealed partial class MathsCalculPage : Page
     {
         Eleve currentStudent;
-        public MathsCalcul()
+        public MathsCalculPage()
         {
             this.InitializeComponent();
         }
@@ -80,14 +80,15 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsGeometriePage), currentStudent);
             }
         }
-        /*
+        
         private void btnMmesures_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(MesuresPage), currentStudent);
+                this.Frame.Navigate(typeof(MathsMesuresPage), currentStudent);
             }
         }
+        /*
         private void btnMnum_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)

@@ -76,7 +76,7 @@ namespace projetEnvWin
         {
             if (currentStudent != null)
             {
-                this.Frame.Navigate(typeof(MathsCalcul), currentStudent);
+                this.Frame.Navigate(typeof(MathsCalculPage), currentStudent);
             }
         }
         /*

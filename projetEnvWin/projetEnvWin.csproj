@@ -134,11 +134,14 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MathsCalcul.xaml.cs">
-      <DependentUpon>MathsCalcul.xaml</DependentUpon>
+    <Compile Include="MathsCalculPage.xaml.cs">
+      <DependentUpon>MathsCalculPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MathsGeometriePage.xaml.cs">
       <DependentUpon>MathsGeometriePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MathsMesuresPage.xaml.cs">
+      <DependentUpon>MathsMesuresPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MathsPage.xaml.cs">
       <DependentUpon>MathsPage.xaml</DependentUpon>
@@ -192,11 +195,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MathsCalcul.xaml">
+    <Page Include="MathsCalculPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MathsGeometriePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MathsMesuresPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
