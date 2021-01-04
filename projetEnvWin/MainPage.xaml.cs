@@ -35,7 +35,7 @@ namespace projetEnvWin
             choixEleves.DisplayMemberPath = "Nom";
         }
 
-        private void btnValider_Click(object sender, RoutedEventArgs e)
+        private async void btnValider_Click(object sender, RoutedEventArgs e)
         {
             if (choixEleves.SelectedItem == null)
             {
@@ -56,6 +56,15 @@ namespace projetEnvWin
                 afficheEleve.FontWeight = Windows.UI.Text.FontWeights.Bold;
                 afficheEleve.Foreground = new SolidColorBrush(Colors.Gray);
                 gridEleve.Children.Add(afficheEleve);
+
+                ContentDialog auth = new ContentDialog
+                {
+                    Title = "Authentification",
+                    Content = "Bravo vous êtes authentifié " + currentStudent.Nom,
+                    CloseButtonText = "Ok"
+                };
+
+                ContentDialogResult result = await auth.ShowAsync();
             }
 
         }
