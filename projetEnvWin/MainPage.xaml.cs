@@ -63,8 +63,30 @@ namespace projetEnvWin
         private void choixEleves_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             btnValider.Background = new SolidColorBrush(Colors.LimeGreen);
-            btnValider.Foreground = new SolidColorBrush(Colors.White);
+            btnValider.Foreground = new SolidColorBrush(Colors.LightGray);
             btnValider.FontWeight = Windows.UI.Text.FontWeights.Bold;
+        }
+
+        private void animBtnH_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimH.Begin();
+
+            }
+        }        
+        private void animBtnF_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimF.Begin();
+            }
+        }        private void animBtnM_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimM.Begin();
+            }
         }
 
         /*SECTION MATHS DANS MENU + SUR ACCUEIL*/
