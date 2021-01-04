@@ -192,10 +192,11 @@ namespace projetEnvWin
             Grid currentGrid = sender as Grid;
             TextBlock currentText = currentGrid.Children[0] as TextBlock;
 
+            currentGrid.Background = new SolidColorBrush(Colors.White);
+
             if(textBlocks.Count < 2)
             {
                 textBlocks.Add(currentText);
-
             }
             if(textBlocks.Count == 2)
             {
