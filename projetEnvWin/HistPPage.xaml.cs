@@ -204,10 +204,7 @@ namespace projetEnvWin
                 textBlocks[0].Text = textBlocks[1].Text;
                 textBlocks[1].Text = tmp;
                 textBlocks.Clear();
-            }
-            
-            
-            
+            }            
         }
 
         private async void btnValider_Click(object sender, RoutedEventArgs e)
