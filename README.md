@@ -49,27 +49,33 @@ application permettant de tester les connaissances en fin de CM2
 - mettre en place fonctionnement duo maths -> qd 1 élève a faux, ca passe à l'autre élève ABANDONNE -> MANQUE DE TEMPS
 
 ### 03/01/2021
-- mettre en place double tap pr mettre réponse sur frise Histoire
-- bouton 'valider' pr réponses frise Histoire
+- écriture Q/A FRANCAIS sous fichier txt OK
+- faire la navigation entre toutes les pages tout en gardant l'eleve connecté OK
+
+### 04/01/2021
+- powerpoint présentation PEG -> LUNDI 13H30-15H30 OK
+- animation bouton accueil OK
+- boite de dialogue OK
+- mettre en place double tap pr mettre réponse sur frise Histoire Préhistoire OK
+- bouton 'valider' pr réponses frise Histoire Préhistoire OK
+- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge histoire Préhistoire OK
+
+### 05/01/2021
+- mettre en place double tap pr mettre réponse sur frise Histoire EN COURS
+- bouton 'valider' pr réponses frise Histoire EN COURS
 - afficher les questions maths
 - afficher réponses maths -> tapped
 - afficher les questions Fr
 - afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
 - bouton 'valider' pr réponses formulaire Fr
-- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge
+- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge histoire EN COURS
+- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge francais
+- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge maths
 - afficher notes Fr
 - afficher notes Maths
 - afficher notes Histoire
-- écriture Q/A FRANCAIS sous fichier txt EN COURS
 - gérer import fichier Q/A francais
-- faire en sorte que histoire s'affiche en mode paysage
-- faire la navigation entre toutes les pages tout en gardant l'eleve connecté OK
-
-### 04/01/2021
-- powerpoint présentation PEG -> LUNDI 13H30-15H30
-
-### 05/01/2021
-- 
+- faire en sorte que histoire s'affiche en mode paysage EN COURS
 
 ### 06/01/2021
 - 
@@ -87,4 +93,4 @@ application permettant de tester les connaissances en fin de CM2
 
 ## BUGS
 - le menu reste visible sur certaines pages ce qui empêche de finir de mettre bien les input (sur les parties histoire)
-- soucis couleur sur certains textes, la couleur n'est jamais prise en compte
+- soucis couleur sur certains textes, la couleur n'est jamais prise en compte 
