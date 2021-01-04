@@ -89,17 +89,17 @@
                             <TextBlock Grid.Row="0" Grid.Column="3" Text="-2 600 000" TextAlignment="Center"/>
                             <TextBlock Grid.Row="0" Grid.Column="5" Text="-400 000" TextAlignment="Center"/>
                             <TextBlock Grid.Row="0" Grid.Column="7" Text="-9 000" TextAlignment="Center"/>
-                            <Grid Grid.Row="1" Grid.Column="1" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                                <TextBlock TextAlignment="Justify"/>    
+                            <Grid Grid.Row="1" Grid.Column="1" x:Name="PP1" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                <TextBlock x:Name="P1" TextAlignment="Justify"/>    
                             </Grid>
-                            <Grid Grid.Row="1" Grid.Column="3" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                                <TextBlock TextAlignment="Justify"/>
+                            <Grid Grid.Row="1" Grid.Column="3" x:Name="PP2" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                <TextBlock x:Name="P2" TextAlignment="Justify"/>
                             </Grid>
-                            <Grid Grid.Row="1" Grid.Column="5" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                                <TextBlock TextAlignment="Justify"/>
+                            <Grid Grid.Row="1" Grid.Column="5" x:Name="PP3" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                <TextBlock x:Name="P3" TextAlignment="Justify"/>
                             </Grid>
-                            <Grid Grid.Row="1" Grid.Column="7" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                                <TextBlock TextAlignment="Justify"/>
+                            <Grid Grid.Row="1" Grid.Column="7" x:Name="PP4" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                <TextBlock x:Name="P4" TextAlignment="Justify"/>
                             </Grid>                            
                         </Grid>
 
