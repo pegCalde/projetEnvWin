@@ -122,16 +122,16 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Grid Grid.Row="1" Grid.Column="1" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                            <TextBlock Text="Age de pierre" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Foreground="Black" Text="Age de pierre" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                         <Grid Grid.Row="1" Grid.Column="3" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                            <TextBlock Text="Nomade" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Foreground="Black" Text="Nomade" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                         <Grid Grid.Row="1" Grid.Column="5" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                            <TextBlock Text="Agriculture" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Foreground="Black" Text="Agriculture" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                         <Grid Grid.Row="1" Grid.Column="7" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                            <TextBlock Text="Découverte du feu" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Foreground="Black" Text="Découverte du feu" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                     </Grid>
                     <Button x:Name="btnValider" Grid.Row="4" Content="Valider" Background="LimeGreen" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnValider_Click" CornerRadius="10"/>
