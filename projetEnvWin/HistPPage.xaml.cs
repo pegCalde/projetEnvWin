@@ -209,5 +209,15 @@ namespace projetEnvWin
             
             
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnValider_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
