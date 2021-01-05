@@ -35,9 +35,19 @@
                 <NavigationViewItem Content="AIDE" x:Name="Help" Tapped="btnHelp_Tapped"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
-                <Grid Background="#5B3B23" Margin="-46,-5,0,-27">
-                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
-                    <Image x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Left" Margin="690,7,0,39" Width="20"/>
+                <Grid Background="#5B3B23">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="4" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+                    <Image Grid.Column="7" Grid.Row="0" x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Center" Width="20"/>
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
@@ -46,7 +56,7 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="5*"/>
-                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
@@ -67,39 +77,41 @@
                     <Grid Grid.Row="2">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="9*"/>
-                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="3*"/>
                         </Grid.RowDefinitions>
-                        <Image  Grid.Row="0" Source="/Assets/frise_prehistoire_vide.png" Stretch="Fill"/>
+                        <Image  Grid.Row="0" Source="/Assets/prehistoire.png" Stretch="Fill"/>
                         <Grid Grid.Row="1" Background="White">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="2*"/>
                                 <RowDefinition Height="3*"/>
+                                <RowDefinition Height="2*"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="3*"/>
                                 <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="3*"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="3*"/>
                                 <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Row="0" Grid.Column="1" Text="-7 000 000" TextAlignment="Center"/>
                             <TextBlock Grid.Row="0" Grid.Column="3" Text="-2 600 000" TextAlignment="Center"/>
                             <TextBlock Grid.Row="0" Grid.Column="5" Text="-400 000" TextAlignment="Center"/>
                             <TextBlock Grid.Row="0" Grid.Column="7" Text="-9 000" TextAlignment="Center"/>
                             <Grid Grid.Row="1" Grid.Column="1" x:Name="PP1" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                                <TextBlock x:Name="P1" TextAlignment="Justify"/>    
+                                <TextBlock x:Name="P1" TextAlignment="Center"/>    
                             </Grid>
                             <Grid Grid.Row="1" Grid.Column="3" x:Name="PP2" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                                <TextBlock x:Name="P2" TextAlignment="Justify"/>
+                                <TextBlock x:Name="P2" TextAlignment="Center"/>
                             </Grid>
                             <Grid Grid.Row="1" Grid.Column="5" x:Name="PP3" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                                <TextBlock x:Name="P3" TextAlignment="Justify"/>
+                                <TextBlock x:Name="P3" TextAlignment="Center"/>
                             </Grid>
                             <Grid Grid.Row="1" Grid.Column="7" x:Name="PP4" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                                <TextBlock x:Name="P4" TextAlignment="Justify"/>
+                                <TextBlock x:Name="P4" TextAlignment="Center"/>
                             </Grid>                            
                         </Grid>
 
@@ -107,7 +119,8 @@
                     <Grid Grid.Row="3">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
-                            <RowDefinition Height="8*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="3*"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
@@ -121,17 +134,17 @@
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Grid Grid.Row="1" Grid.Column="1" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                            <TextBlock Foreground="Black" Text="Age de pierre" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Grid Grid.Row="2" Grid.Column="1" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                            <TextBlock Foreground="Black" Text="Age de pierre" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
-                        <Grid Grid.Row="1" Grid.Column="3" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                            <TextBlock Foreground="Black" Text="Nomade" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Grid Grid.Row="2" Grid.Column="3" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                            <TextBlock Foreground="Black" Text="Nomade" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
-                        <Grid Grid.Row="1" Grid.Column="5" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                            <TextBlock Foreground="Black" Text="Agriculture" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Grid Grid.Row="2" Grid.Column="5" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                            <TextBlock Foreground="Black" Text="Agriculture" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
-                        <Grid Grid.Row="1" Grid.Column="7" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
-                            <TextBlock Foreground="Black" Text="Découverte du feu" TextAlignment="Justify" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Grid Grid.Row="2" Grid.Column="7" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                            <TextBlock Foreground="Black" Text="Découverte du feu" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                     </Grid>
                     <Button x:Name="btnValider" Grid.Row="4" Content="Valider" Background="LimeGreen" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnValider_Click" CornerRadius="10"/>

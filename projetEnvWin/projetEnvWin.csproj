@@ -187,6 +187,7 @@
     <Content Include="Assets\back-button-blc.png" />
     <Content Include="Assets\back-button-brun.png" />
     <Content Include="Assets\back-button.png" />
+    <Content Include="Assets\epoqueContemporaine.png" />
     <Content Include="Assets\frise_epoquecontemporaine_vide.png" />
     <Content Include="Assets\frise_moyenage_vide.png" />
     <Content Include="Assets\frise_prehistoire_vide.png" />
@@ -197,8 +198,11 @@
     <Content Include="Assets\library-books-blc.png" />
     <Content Include="Assets\library-books-brun.png" />
     <Content Include="Assets\library-books.png" />
+    <Content Include="Assets\moyenAge.png" />
+    <Content Include="Assets\prehistoire.png" />
     <Content Include="Assets\speech-bubble-blc.png" />
     <Content Include="Assets\speech-bubble.png" />
+    <Content Include="Assets\tpsModernes.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
