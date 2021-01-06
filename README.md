@@ -26,10 +26,8 @@ application permettant de tester les connaissances en fin de CM2
 
 
 ## NOTE
-- choisir le visuel iphone 6 pr tt mettre en page
-- je n'ai pas modifier les pages maths duo parce que :
-  - je ne suis pas sure qu'on ai le tps de faire le mode duo
-  - je voulais voir avec toi si ca vaut le coup de faire des pages duo maths si au fianl c'est juste un ajout d'un 2e élève
+- choisir le visuel 13,5 surface book pr tt mettre en page
+- je n'ai pas modifier les pages maths duo parce que j'attend de voir si on a le tps de les faire qd mm
 
 ## TO DO
 ### 01/01/2021
@@ -68,6 +66,7 @@ application permettant de tester les connaissances en fin de CM2
 - faire en sorte que histoire s'affiche en mode paysage OK
 - mettre en place double tap pr mettre réponse sur frise Histoire OK
 - bouton 'valider' pr réponses frise Histoire OK
+- créer page About OK
 
 ### 07/01/2021
 - mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge francais
@@ -81,17 +80,19 @@ application permettant de tester les connaissances en fin de CM2
 - afficher les questions Fr
 - afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
 - bouton 'valider' pr réponses formulaire Fr
-- ajout btn retour sur ttes sous pages
-- créer page About
+- ajout btn retour sur ttes sous pages EN COURS
 
 ### 08/01/2021
 - 
 
 ### 09/01/2021
 - résolution des bugs
-- vérifier affichage sur ttes les pages sur 2 ordis différents  
+- vérifier affichage sur ttes les pages sur 2 ordis différents  EN COURS
  -- sous pages histoire OK
-- commenter le code
+ -- page aide OK
+ -- page about OK
+- commenter le code EN COURS
+- créer page readme pour la prof
 
 ## BUGS
 - le menu reste visible sur certaines pages ce qui empêche de finir de mettre bien les input (sur les parties histoire)
