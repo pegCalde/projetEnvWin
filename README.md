@@ -61,36 +61,37 @@ application permettant de tester les connaissances en fin de CM2
 - mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge histoire Préhistoire OK
 
 ### 05/01/2021
-- mettre en place double tap pr mettre réponse sur frise Histoire EN COURS
-- bouton 'valider' pr réponses frise Histoire EN COURS
-- afficher les questions maths
-- afficher réponses maths -> tapped
-- afficher les questions Fr
-- afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
-- bouton 'valider' pr réponses formulaire Fr
-- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge histoire EN COURS
+- création nlles images pr frises OK
+
+### 06/01/2021
+- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge histoire OK
+- faire en sorte que histoire s'affiche en mode paysage OK
+- mettre en place double tap pr mettre réponse sur frise Histoire OK
+- bouton 'valider' pr réponses frise Histoire OK
+
+### 07/01/2021
 - mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge francais
 - mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge maths
 - afficher notes Fr
 - afficher notes Maths
 - afficher notes Histoire
 - gérer import fichier Q/A francais
-- faire en sorte que histoire s'affiche en mode paysage EN COURS
-
-### 06/01/2021
-- 
-
-### 07/01/2021
-- 
+- afficher les questions maths
+- afficher réponses maths -> tapped
+- afficher les questions Fr
+- afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
+- bouton 'valider' pr réponses formulaire Fr
+- ajout btn retour sur ttes sous pages
 
 ### 08/01/2021
 - 
 
 ### 09/01/2021
 - résolution des bugs
-- vérifier affichage sur ttes les pages
+- vérifier affichage sur ttes les pages sur 2 ordis différents
 - commenter le code
 
 ## BUGS
 - le menu reste visible sur certaines pages ce qui empêche de finir de mettre bien les input (sur les parties histoire)
-- soucis couleur sur certains textes, la couleur n'est jamais prise en compte 
+- soucis couleur sur certains textes, la couleur n'est jamais prise en compte => CAUSE MODE SOMBRE
+
