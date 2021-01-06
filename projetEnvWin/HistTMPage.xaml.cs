@@ -24,6 +24,8 @@ namespace projetEnvWin
     public sealed partial class HistTMPage : Page
     {
         Eleve currentStudent;
+        List<TextBlock> textBlocks = new List<TextBlock>();
+
         public HistTMPage()
         {
             this.InitializeComponent();
@@ -121,9 +123,6 @@ namespace projetEnvWin
             }
         }
 
-
-
-
         private void btnHec_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -189,6 +188,94 @@ namespace projetEnvWin
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
+        }
+
+        private void GridExo_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Grid currentGrid = sender as Grid;
+            TextBlock currentText = currentGrid.Children[0] as TextBlock;
+
+            currentGrid.Background = new SolidColorBrush(Colors.White);
+
+            if (textBlocks.Count < 2)
+            {
+                textBlocks.Add(currentText);
+            }
+            if (textBlocks.Count == 2)
+            {
+                string tmp = textBlocks[0].Text;
+                textBlocks[0].Text = textBlocks[1].Text;
+                textBlocks[1].Text = tmp;
+                textBlocks.Clear();
+            }
+        }
+
+        private async void btnValider_Click(object sender, RoutedEventArgs e)
+        {
+            bool reussite = true;
+
+            if (P1.Text != "Copernic affirme que la terre tourne autour du soleil")
+            {
+                reussite = false;
+                PP1.BorderBrush = new SolidColorBrush(Colors.Red);
+            }
+            else
+            {
+                PP1.BorderBrush = new SolidColorBrush(Colors.LimeGreen);
+            }
+
+            if (P2.Text != "Guerres de religion")
+            {
+                reussite = false;
+                PP2.BorderBrush = new SolidColorBrush(Colors.Red);
+            }
+            else
+            {
+                PP2.BorderBrush = new SolidColorBrush(Colors.LimeGreen);
+            }
+
+            if (P3.Text != "Règne de Louis XIV")
+            {
+                reussite = false;
+                PP3.BorderBrush = new SolidColorBrush(Colors.Red);
+            }
+            else
+            {
+                PP3.BorderBrush = new SolidColorBrush(Colors.LimeGreen);
+            }
+
+            if (P4.Text != "Début de la révolution Française")
+            {
+                reussite = false;
+                PP4.BorderBrush = new SolidColorBrush(Colors.Red);
+            }
+            else
+            {
+                PP4.BorderBrush = new SolidColorBrush(Colors.LimeGreen);
+            }
+
+            if (reussite)
+            {
+                ContentDialog TpsModernes = new ContentDialog
+                {
+                    Title = "Temps Modernes",
+                    Content = "Bravo vous avez reconstitué la frise",
+                    CloseButtonText = "Ok"
+                };
+
+                ContentDialogResult result = await TpsModernes.ShowAsync();
+            }
+            else
+            {
+                ContentDialog TpsModernes = new ContentDialog
+                {
+                    Title = "Temps Modernes",
+                    Content = "La frise est incorrect, réessayez pour améliorer votre score",
+                    CloseButtonText = "Ok"
+                };
+
+                ContentDialogResult result = await TpsModernes.ShowAsync();
+            }
         }
 
     }

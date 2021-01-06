@@ -24,6 +24,8 @@ namespace projetEnvWin
     public sealed partial class HistECPage : Page
     {
         Eleve currentStudent;
+        List<TextBlock> textBlocks = new List<TextBlock>();
+
         public HistECPage()
         {
             this.InitializeComponent();
@@ -186,6 +188,94 @@ namespace projetEnvWin
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
+        }
+
+        private void GridExo_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Grid currentGrid = sender as Grid;
+            TextBlock currentText = currentGrid.Children[0] as TextBlock;
+
+            currentGrid.Background = new SolidColorBrush(Colors.White);
+
+            if (textBlocks.Count < 2)
+            {
+                textBlocks.Add(currentText);
+            }
+            if (textBlocks.Count == 2)
+            {
+                string tmp = textBlocks[0].Text;
+                textBlocks[0].Text = textBlocks[1].Text;
+                textBlocks[1].Text = tmp;
+                textBlocks.Clear();
+            }
+        }
+
+        private async void btnValider_Click(object sender, RoutedEventArgs e)
+        {
+            bool reussite = true;
+
+            if (P1.Text != "Abolition de l'esclavage")
+            {
+                reussite = false;
+                PP1.BorderBrush = new SolidColorBrush(Colors.Red);
+            }
+            else
+            {
+                PP1.BorderBrush = new SolidColorBrush(Colors.LimeGreen);
+            }
+
+            if (P2.Text != "1ere guerre mondiale")
+            {
+                reussite = false;
+                PP2.BorderBrush = new SolidColorBrush(Colors.Red);
+            }
+            else
+            {
+                PP2.BorderBrush = new SolidColorBrush(Colors.LimeGreen);
+            }
+
+            if (P3.Text != "Droit de vote des femmes")
+            {
+                reussite = false;
+                PP3.BorderBrush = new SolidColorBrush(Colors.Red);
+            }
+            else
+            {
+                PP3.BorderBrush = new SolidColorBrush(Colors.LimeGreen);
+            }
+
+            if (P4.Text != "Traité de Maastrich")
+            {
+                reussite = false;
+                PP4.BorderBrush = new SolidColorBrush(Colors.Red);
+            }
+            else
+            {
+                PP4.BorderBrush = new SolidColorBrush(Colors.LimeGreen);
+            }
+
+            if (reussite)
+            {
+                ContentDialog EpoqueContemp = new ContentDialog
+                {
+                    Title = "Epoque Contemporaine",
+                    Content = "Bravo vous avez reconstitué la frise",
+                    CloseButtonText = "Ok"
+                };
+
+                ContentDialogResult result = await EpoqueContemp.ShowAsync();
+            }
+            else
+            {
+                ContentDialog EpoqueContemp = new ContentDialog
+                {
+                    Title = "Epoque Contemporaine",
+                    Content = "La frise est incorrect, réessayez pour améliorer votre score",
+                    CloseButtonText = "Ok"
+                };
+
+                ContentDialogResult result = await EpoqueContemp.ShowAsync();
+            }
         }
     }
 }

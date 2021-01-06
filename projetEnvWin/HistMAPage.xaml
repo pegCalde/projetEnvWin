@@ -35,19 +35,32 @@
                 <NavigationViewItem Content="AIDE" x:Name="Help" Tapped="btnHelp_Tapped"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
-                <Grid Background="#5B3B23" Margin="-46,-5,0,-27">
-                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
-                    <Image x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Left" Margin="690,7,0,39" Width="20"/>
+                <Grid Background="#5B3B23">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="4" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+                    <Image Grid.Column="7" Grid.Row="0" x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Center" Width="20"/>
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
-                <Grid Background="#F8F8D9" Margin="0,27,0,-1">
+                <Grid Background="#F8F8D9">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition Height="8*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" Margin="0,-2,0,1" Grid.RowSpan="2">
+                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" >
                         <Grid.RowDefinitions>
                             <RowDefinition Height="7*"/>
                             <RowDefinition Height="3*"/>
@@ -58,66 +71,88 @@
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,42,0,0" Grid.Column="1"></TextBlock>
                     </Grid>
-                    <Grid Grid.Row="1">
+                    <Grid Grid.Row="1" Background="#5B3B23">
+                        <TextBlock Text="Histoire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                    </Grid>
+                    <Grid Grid.Row="2">
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="9*"/>
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                        <Image  Grid.Row="0" Source="/Assets/moyenAge.png" Stretch="Fill"/>
+                        <Grid Grid.Row="1" Background="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="-7 000 000" TextAlignment="Center"/>
+                            <TextBlock Grid.Row="0" Grid.Column="3" Text="-2 600 000" TextAlignment="Center"/>
+                            <TextBlock Grid.Row="0" Grid.Column="5" Text="-400 000" TextAlignment="Center"/>
+                            <TextBlock Grid.Row="0" Grid.Column="7" Text="-9 000" TextAlignment="Center"/>
+                            <Grid Grid.Row="1" Grid.Column="1" x:Name="PP1" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                <TextBlock x:Name="P1" TextAlignment="Center"/>
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="3" x:Name="PP2" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                <TextBlock x:Name="P2" TextAlignment="Center"/>
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="5" x:Name="PP3" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                <TextBlock x:Name="P3" TextAlignment="Center"/>
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="7" x:Name="PP4" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                                <TextBlock x:Name="P4" TextAlignment="Center"/>
+                            </Grid>
+                        </Grid>
+
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="3*"/>
                             <RowDefinition Height="*"/>
-                            <RowDefinition Height="4*"/>
-                            <RowDefinition Height="2*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="8*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-
-                        <Grid Grid.Row="3" Grid.Column="1">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="265*"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="264*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid Background="#5B3B23" Margin="-74,-125,-72,186" Grid.ColumnSpan="3">
-                                <TextBlock Text="Histoire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold"/>
-                            </Grid>
-                            <Grid Margin="-163,-60,10,300" Grid.ColumnSpan="3">
-                                <!--Mettre les input des réponses à placer sur la frise-->
-                                <Image Source="/Assets/frise_moyenage_vide.png" Margin="78,-44,-93,-146" Stretch="Fill"/>
-                                <StackPanel Orientation="Horizontal" Margin="162,92,482,-130" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBox x:Name="answerInput1" Header="" Width="89" Height="36"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal" Margin="674,92,-79,-130" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBox x:Name="answerInput2" Header="" Width="138" Height="37"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal" Margin="482,92,103,-130" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBox x:Name="answerInput3" Header="" Width="148" Height="37"/>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal" Margin="268,93,340,-128" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBox x:Name="answerInput4" Header="" Width="126" Height="34"/>
-                                </StackPanel>
-                            </Grid>
-                            <Grid Margin="-73,75,-72,-48" BorderBrush="Black" BorderThickness="0,1,0,0" Grid.ColumnSpan="3">
-                                <!--Mettre les input des réponses à placer sur la frise-->
-                                <Grid Background="White" Margin="407,24,187,20" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBlock Text="sacre de Charlemagne" Foreground="Black" FontSize="12" Width="120" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Grid>
-                                <Grid Background="White" Margin="10,22,530,20" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBlock Text="1er livre imprimé par Gutenberg" Foreground="Black" FontSize="12" Width="180" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Grid>
-                                <Grid Background="White" Margin="254,23,404,18" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBlock Text="Hégire" Foreground="Black" FontSize="12" Width="40" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Grid>
-                                <Grid Background="White" Margin="596,29,58,15" BorderBrush="Orange" BorderThickness="1">
-                                    <TextBlock Text="croisades" Foreground="Black" FontSize="12" Width="53" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Grid>
-                            </Grid>
+                        <Grid Grid.Row="2" Grid.Column="1" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                            <TextBlock Foreground="Black" Text="1er livre imprimé par Gutenberg" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="3" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                            <TextBlock Foreground="Black" Text="Hégire" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="5" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                            <TextBlock Foreground="Black" Text="Croisades" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="7" BorderBrush="Orange" BorderThickness="1" Tapped="GridExo_Tapped">
+                            <TextBlock Foreground="Black" Text="Sacre de Charlemagne" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                     </Grid>
-                    <Grid Grid.Row="2" Background="#5B3B23">
+                    <Button x:Name="btnValider" Grid.Row="4" Content="Valider" Background="LimeGreen" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnValider_Click" CornerRadius="10"/>
+                    <Grid Grid.Row="6" Background="#5B3B23">
                         <TextBlock Text="©calderonpeggy_savinguillaume" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="15"/>
                     </Grid>
                 </Grid>
+
             </NavigationView.Content>
         </NavigationView>
         <VisualStateManager.VisualStateGroups>

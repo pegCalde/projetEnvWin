@@ -188,10 +188,6 @@
     <Content Include="Assets\back-button-brun.png" />
     <Content Include="Assets\back-button.png" />
     <Content Include="Assets\epoqueContemporaine.png" />
-    <Content Include="Assets\frise_epoquecontemporaine_vide.png" />
-    <Content Include="Assets\frise_moyenage_vide.png" />
-    <Content Include="Assets\frise_prehistoire_vide.png" />
-    <Content Include="Assets\frise_tpsmodernes_vide.png" />
     <Content Include="Assets\home-icon-blc.png" />
     <Content Include="Assets\home-icon-brun.png" />
     <Content Include="Assets\home-icon.png" />
