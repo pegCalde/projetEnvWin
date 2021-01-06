@@ -87,10 +87,11 @@ application permettant de tester les connaissances en fin de CM2
 
 ### 09/01/2021
 - résolution des bugs
-- vérifier affichage sur ttes les pages sur 2 ordis différents  EN COURS
- -- sous pages histoire OK
- -- page aide OK
- -- page about OK
+- vérifier affichage sur ttes les pages sur 2 ordis différents  EN COURS  
+ -- sous pages histoire OK  
+ -- page aide OK  
+ -- page about OK  
+ --
 - commenter le code EN COURS
 - créer page readme pour la prof
 
