@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="projetEnvWin.AidePage"
+    x:Class="projetEnvWin.AboutPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:projetEnvWin"
@@ -32,9 +32,9 @@
                 <NavigationViewItem Content="Epoque Contemporaine" x:Name="H_3" Tapped="btnHec_Tapped"/>
                 <NavigationViewItem Content="Préhistoire" x:Name="H_4" Tapped="btnHp_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="AIDE" x:Name="Help"/>
+                <NavigationViewItem Content="AIDE" x:Name="Help" Tapped="btnHelp_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="ABOUT" x:Name="About" Tapped="btnAp_Tapped"/>
+                <NavigationViewItem Content="ABOUT" x:Name="About"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
                 <Grid Background="#5B3B23">
@@ -73,7 +73,7 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="3*"/>
                             <RowDefinition Height="9*"/>
-                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="3*"/>
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0">
                             <Grid.RowDefinitions>
@@ -86,7 +86,7 @@
                                 <ColumnDefinition Width="8*"/>
                                 <ColumnDefinition Width="3*"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Row="2" Grid.Column="1" Text="Fonctionnement de l'application" VerticalAlignment="Top" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="A propos" VerticalAlignment="Top" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
                         </Grid>
                         <Grid Grid.Row="1">
                             <Grid.RowDefinitions>
@@ -95,27 +95,18 @@
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="3*"/>
-                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="5*"/>
                                 <ColumnDefinition Width="3*"/>
                             </Grid.ColumnDefinitions>
                             <RichTextBlock Grid.Row="1" Grid.Column="1" Foreground="Black" HorizontalAlignment="Center">
                                 <Paragraph>
-                                    <Run FontSize="15" Text="L'application 'Teste Toi' est une application permettant de tester les connaissances en fin de CM2.
-                                         
-                                             Il faut dans un premier temps, choisir l'élève qui testera ses connaissances puis choisir la matière à tester.
-                                             Une fois la matière choisie, il reste à choisir la partie puis le quizz correspondant s'affichera.
-                                             --------------------------------------------
+                                    <Run FontSize="20" Text="Nom de L'application : Teste toi
+                                         --------------------------------------------
                                          "/>
-                                    <Run FontSize="15" Text="Une note s'affiche une fois une partie finie ainsi qu'une note globale pour la matière.
-                                             ---------------------------------------------
+                                    <Run FontSize="20" Text="Version : 1.0.0
+                                         --------------------------------------------
                                          "/>
-                                    <Run FontSize="15" Text="La matière Mathématiques contient un chrono et offre la possibilité de se tester en mode duel avec un autre élève.
-                                             ---------------------------------------------
-                                         "/>
-                                    <Run FontSize="15" Text="La matière Histoire contient une frise sur laquelle il faut mettre les bons évènements correspondant aux bonnes dates.
-                                             ---------------------------------------------
-                                         "/>
-                                    <Run FontSize="15" Text=" La matière Français est constitué de questions soit à choix multiples soit fermé."/>
+                                    <Run FontSize="20" Text="Développeurs : Guillaume Savin et Peggy Calderon-Kayser"/>
                                 </Paragraph>
                             </RichTextBlock>
                         </Grid>

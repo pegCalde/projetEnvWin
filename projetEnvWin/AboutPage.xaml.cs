@@ -21,10 +21,11 @@ namespace projetEnvWin
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class AidePage : Page
+    public sealed partial class AboutPage : Page
     {
         Eleve currentStudent;
-        public AidePage()
+
+        public AboutPage()
         {
             this.InitializeComponent();
         }
@@ -190,11 +191,11 @@ namespace projetEnvWin
             }
         }
 
-        /*PAGE ABOUT DANS MENU*/
+        /*PAGE AIDE DANS MENU*/
 
-        private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
+        private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(AboutPage));
+            this.Frame.Navigate(typeof(AidePage));
         }
     }
 }
