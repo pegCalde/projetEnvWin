@@ -82,6 +82,7 @@ application permettant de tester les connaissances en fin de CM2
 - afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
 - bouton 'valider' pr réponses formulaire Fr
 - ajout btn retour sur ttes sous pages
+- créer page About
 
 ### 08/01/2021
 - 
