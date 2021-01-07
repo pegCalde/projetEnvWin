@@ -186,6 +186,12 @@ namespace projetEnvWin
         {
             this.Frame.Navigate(typeof(AidePage));
         }
-        
+
+        /*PAGE ABOUT DANS MENU*/
+
+        private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AboutPage));
+        }
     }
 }

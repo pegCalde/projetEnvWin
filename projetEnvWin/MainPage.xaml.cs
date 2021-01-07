@@ -207,7 +207,14 @@ namespace projetEnvWin
         {
             this.Frame.Navigate(typeof(AidePage), currentStudent);
         }
-        
+
+        /*PAGE ABOUT DANS MENU*/
+
+        private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AboutPage));
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             if (e.Parameter == "")
