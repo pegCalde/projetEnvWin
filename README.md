@@ -80,17 +80,15 @@ application permettant de tester les connaissances en fin de CM2
 - afficher les questions Fr
 - afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
 - bouton 'valider' pr réponses formulaire Fr
-- ajout btn retour sur ttes sous pages EN COURS
+- ajout btn retour sur ttes sous pages OK
 
 ### 08/01/2021
-- 
+- Vérifier merge de ttes les branches sur master
 
 ### 09/01/2021
 - résolution des bugs
 - vérifier affichage sur ttes les pages sur 2 ordis différents  EN COURS  
- -- sous pages histoire OK  
- -- page aide OK  
- -- page about OK  
+ -- toutes pages sur mon ordi OK  
  --
 - commenter le code EN COURS
 - créer page readme pour la prof
