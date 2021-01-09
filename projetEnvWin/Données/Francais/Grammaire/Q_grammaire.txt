@@ -1,0 +1,15 @@
+Tu regardes la télé. Quel est ce type de phrase ?
+CLOSE
+1,-1,-1
+Le hérisson porte de nombreuses épines sur le dos. Quel est le COD dans cette phrase ?
+CLOSE
+1,-1,-1
+Les enfants se plaignaient souvent du bruit à la cantine. Quel est le COI dans cette phrase ?
+CLOSE
+-1,1,-1
+Combien de compléments de phrases sont présent dans cette phrase ? Autour de Paris, les autoroutes ont été construites progressivement depuis les années 1960.
+CLOSE
+-1,-1,1
+Qui est l'intrus parmi ces determinants ?
+CLOSE
+1,-1,-1

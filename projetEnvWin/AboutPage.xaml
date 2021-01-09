@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="projetEnvWin.FrLexPage"
+    x:Class="projetEnvWin.AboutPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:projetEnvWin"
@@ -16,7 +16,7 @@
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="FRANCAIS" x:Name="Fr" Tapped="btnFrancais_Tapped"/>
                 <NavigationViewItem Content="Conjugaison" x:Name="Fr_1" Tapped="btnFrConjug_Tapped"/>
-                <NavigationViewItem Content="Lexique" x:Name="Fr_2"/>
+                <NavigationViewItem Content="Lexique" x:Name="Fr_2" Tapped="btnFrLexique_Tapped"/>
                 <NavigationViewItem Content="Grammaire" x:Name="Fr_3" Tapped="btnFrGram_Tapped"/>
                 <NavigationViewItem Content="Orthographe" x:Name="Fr_4" Tapped="btnFrOrtho_Tapped"/>
                 <NavigationViewItemSeparator />
@@ -34,7 +34,7 @@
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="AIDE" x:Name="Help" Tapped="btnHelp_Tapped"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="ABOUT" x:Name="About" Tapped="btnAp_Tapped"/>
+                <NavigationViewItem Content="ABOUT" x:Name="About"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
                 <Grid Background="#5B3B23">
@@ -48,21 +48,19 @@
                         <ColumnDefinition Width="3*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="4" Grid.Row="1" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
-                    <Image Grid.Column="7" Grid.Row="1" x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20"/>
+                    <TextBlock Grid.Column="4" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+                    <Image Grid.Column="7" Grid.Row="0" x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Center" Width="20"/>
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
-                <Grid Background="#F8F8D9" Margin="0,10,0,0">
+                <Grid Background="#F8F8D9">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="8*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" >
+                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" Margin="0,0,0,700" Grid.RowSpan="2">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
                             <RowDefinition Height="7*"/>
                             <RowDefinition Height="3*"/>
                         </Grid.RowDefinitions>
@@ -70,44 +68,50 @@
                             <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="7*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Row="1" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,42,0,0" Grid.Column="1"></TextBlock>
                     </Grid>
-                    <Grid Grid.Row="1" Background="#5B3B23">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="3*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width="3*"/>
-                            <ColumnDefinition Width="3*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0" Grid.Row="1" x:Name="BackBtn" Click="BackBtn_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
-                        <TextBlock Grid.Column="4" x:Name="btnfrTitre" Text="Français" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="20"/>
-                    </Grid>
-                    <Grid Grid.Row="2">
+                    <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="3*"/>
                             <RowDefinition Height="9*"/>
-                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="3*"/>
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="50*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="3*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="3*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="A propos" VerticalAlignment="Top" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
                                 <RowDefinition Height="100*"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="3*"/>
-                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="5*"/>
                                 <ColumnDefinition Width="3*"/>
                             </Grid.ColumnDefinitions>
-                            <Grid Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center">
-                                <!--formulaire-->
-                            </Grid>
+                            <RichTextBlock Grid.Row="1" Grid.Column="1" Foreground="Black" HorizontalAlignment="Center">
+                                <Paragraph>
+                                    <Run FontSize="20" Text="Nom de L'application : Teste toi
+                                         --------------------------------------------
+                                         "/>
+                                    <Run FontSize="20" Text="Version : 1.0.0
+                                         --------------------------------------------
+                                         "/>
+                                    <Run FontSize="20" Text="Développeurs : Guillaume Savin et Peggy Calderon-Kayser"/>
+                                </Paragraph>
+                            </RichTextBlock>
                         </Grid>
                     </Grid>
-                    <Grid Grid.Row="3" Background="#5B3B23">
+                    <Grid Grid.Row="2" Background="#5B3B23">
                         <TextBlock Text="©calderonpeggy_savinguillaume" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="15"/>
                     </Grid>
                 </Grid>

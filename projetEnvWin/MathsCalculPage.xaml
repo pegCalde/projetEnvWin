@@ -33,22 +33,36 @@
                 <NavigationViewItem Content="Préhistoire" x:Name="H_4" Tapped="btnHp_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="AIDE" x:Name="Help" Tapped="btnHelp_Tapped"/>
+                <NavigationViewItemSeparator />
+                <NavigationViewItem Content="ABOUT" x:Name="About" Tapped="btnAp_Tapped"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
-                <Grid Background="#5B3B23" Margin="-46,-5,0,-27">
-                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
-                    <Image x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Left" Margin="465,7,0,39" Width="20"/>
+                <Grid Background="#5B3B23">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="4" Grid.Row="1" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+                    <Image Grid.Column="7" Grid.Row="1" x:Name="HomePage" Tapped="ReturnHome_Tapped" Source="/Assets/home-icon-blc.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20"/>
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
-                <Grid Background="#F8F8D9" Margin="0,27,0,-1">
+                <Grid Background="#F8F8D9" Margin="0,10,0,0">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition Height="8*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="5*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" Margin="0,1,0,9">
+                    <Grid Grid.Row="0" x:Name="gridEleve" Background="White" BorderBrush="Orange" BorderThickness="1" >
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
                             <RowDefinition Height="7*"/>
                             <RowDefinition Height="3*"/>
                         </Grid.RowDefinitions>
@@ -56,38 +70,103 @@
                             <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="7*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Row="0" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,42,0,0" Grid.Column="1"></TextBlock>
+                        <TextBlock Grid.Row="1" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,42,0,0" Grid.Column="1"></TextBlock>
                     </Grid>
-                    <Grid Grid.Row="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="3*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="4*"/>
-                            <RowDefinition Height="2*"/>
-                        </Grid.RowDefinitions>
+                    <Grid Grid.Row="1" Background="#5B3B23">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="8*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="3*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-
-                        <Grid Grid.Row="3" Grid.Column="1">
+                        <Button Grid.Column="0" Grid.Row="1" x:Name="BackBtn" Click="BackBtn_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                        <TextBlock Grid.Column="4" x:Name="btnMTitre" Text="Mathématiques" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold"/>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="50*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50*"/>
+                                <RowDefinition Height="1000*"/>
+                                <RowDefinition Height="50*"/>
+                            </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="5*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="10*"/>
+                                <ColumnDefinition Width="3*"/>
                             </Grid.ColumnDefinitions>
-                            <Grid Background="#5B3B23" Margin="-42,-238,-41,375" Grid.ColumnSpan="3">
-                                <TextBlock Text="Mathématiques" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold"/>
-                            </Grid>
-                            <Grid Margin="-42,-191,-41,-95" Background="Black" Grid.ColumnSpan="3">
-                                <TextBlock Text="Temps" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="15" Margin="10,10,0,0"/>
-                                <TextBlock Text="Score" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="15" Margin="314,10,0,0"/>
+                            <Grid Background="Black" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Width="715">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50*"/>
+                                    <RowDefinition Height="100*"/>
+                                    <RowDefinition Height="100*"/>
+                                    <RowDefinition Height="500*"/>
+                                    <RowDefinition Height="800*"/>
+                                    <RowDefinition Height="50*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="30*"/>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <!--encart affichage réponses-->
+                                <!--l'encart orange c'est pour voir où faut faire appraitre la question-->
+                                <Grid Grid.Column="2" Grid.Row="3">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100*"/>
+                                        <RowDefinition Height="50*"/>
+                                        <RowDefinition Height="100*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="1" Grid.Row="1" BorderBrush="Orange" BorderThickness="1">
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="15"/>
+                                    </Grid>
+                                </Grid>
+                                <!--encart affichage réponses-->
+                                <!--l'encart orange c'est pour voir où faut faire appraitre les réponses-->
+                                <Grid Grid.Column="2" Grid.Row="4">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100*"/>
+                                        <RowDefinition Height="50*"/>
+                                        <RowDefinition Height="100*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="3*"/>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="3*"/>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="1" Grid.Row="1" BorderBrush="Orange" BorderThickness="1">
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="15"/>
+                                    </Grid>
+                                    <Grid Grid.Column="3" Grid.Row="1" BorderBrush="Orange" BorderThickness="1">
+                                            <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White" FontSize="15"/>
+                                    </Grid>
+                                    <Grid Grid.Column="5" Grid.Row="1" BorderBrush="Orange" BorderThickness="1">
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="15"/>
+                                    </Grid>
+                                </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid Grid.Row="2" Background="#5B3B23">
+                    <Grid Grid.Row="3" Background="#5B3B23">
                         <TextBlock Text="©calderonpeggy_savinguillaume" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="15"/>
                     </Grid>
                 </Grid>

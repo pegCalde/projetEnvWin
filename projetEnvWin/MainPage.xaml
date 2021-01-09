@@ -33,10 +33,22 @@
                 <NavigationViewItem Content="Préhistoire" x:Name="H_4" Tapped="btnHp_Tapped"/>
                 <NavigationViewItemSeparator />
                 <NavigationViewItem Content="AIDE" x:Name="Help" Tapped="btnHelp_Tapped"/>
+                <NavigationViewItemSeparator />
+                <NavigationViewItem Content="ABOUT" x:Name="About" Tapped="btnAp_Tapped"/>
             </NavigationView.MenuItems>
             <NavigationView.Header>
-                <Grid Background="#5B3B23" Margin="-46,-5,0,-27">
-                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
+                <Grid Background="#5B3B23">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="4" Grid.Row="1" Text="Teste Toi" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" />
                 </Grid>
             </NavigationView.Header>
             <NavigationView.Content>
@@ -52,45 +64,43 @@
                             <RowDefinition Height="3*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="3*"/>
-                            <ColumnDefinition Width="7*"/>
+                            <ColumnDefinition Width="2*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Choix élève :" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-                        <ComboBox x:Name="choixEleves" Grid.Column="1" SelectionChanged="choixEleves_SelectionChanged" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="1,0,19,0" Height="38" Background="LightGray" Foreground="Black" BorderBrush="Gray" FocusVisualPrimaryBrush="#FF959595" FocusVisualSecondaryBrush="#FF858484"/>
-                        <Button x:Name="btnValider" Click="btnValider_Click" Grid.Column="1" Content="Valider" Margin="242,86,0,0" CornerRadius="7,7,7,7" Width="89" Grid.RowSpan="2" VerticalAlignment="Top" Background="#FF686868"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="Choix élève :" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+                        <ComboBox Grid.Row="0" Grid.Column="2"  x:Name="choixEleves" SelectionChanged="choixEleves_SelectionChanged" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="38" Background="LightGray" Foreground="Black" BorderBrush="Gray"/>
+                        <Button Grid.Row="1" Grid.Column="2" x:Name="btnValider" Click="btnValider_Click"  Content="Valider" CornerRadius="7,7,7,7" Width="89" VerticalAlignment="Top" HorizontalAlignment="Right" Background="#FF686868" Grid.RowSpan="2"/>
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
                             <RowDefinition Height="3*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="4*"/>
-                            <RowDefinition Height="2*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="8*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-
                         <Grid Grid.Row="3" Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="5*"/>
+                                <RowDefinition Height="7*"/>
+                                <RowDefinition Height="5*"/>
+                                <RowDefinition Height="7*"/>
+                                <RowDefinition Height="5*"/>
+                                <RowDefinition Height="7*"/>
+                                <RowDefinition Height="5*"/>
+                            </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="5*"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="5*"/>
                             </Grid.ColumnDefinitions>
-                            <Grid Background="#5B3B23" BorderThickness="2" Margin="-21,-177,-19,286" Grid.ColumnSpan="3" CornerRadius="30" Tapped="btnHistoire_Tapped">
-                                <Rectangle x:Name="animBtnH" Fill="Red" Opacity="0" Margin="-32,0,0,-11" Tapped="animBtnH_Tapped"></Rectangle>
-                                <TextBlock x:Name="btnHistoire" Text="Histoire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30" Width="126" Height="54" Margin="12,0,0,0"/>
-                                <Grid.Resources>
-                                    <!--animation-->
-                                    <Storyboard x:Name="appAnimH">
-                                        <DoubleAnimation Storyboard.TargetName="animBtnH" Storyboard.TargetProperty="Opacity" From="0.2" To="1.0" Duration="0:0:2" AutoReverse="True" RepeatBehavior="2"/>
-                                    </Storyboard>
-                                </Grid.Resources>
+                            <Grid Grid.Row="1" Background="#5B3B23" Grid.ColumnSpan="3" CornerRadius="30" Tapped="btnHistoire_Tapped">
+                                <TextBlock x:Name="btnHistoire" Text="Histoire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                             </Grid>
-                            <Grid Background="#5B3B23" Margin="-21,-45,-19,160" Grid.ColumnSpan="3" CornerRadius="30" Tapped="btnFrancais_Tapped">
-                                <Rectangle x:Name="animBtnF" Fill="Red" Opacity="0" Margin="-32,0,0,-11" Tapped="animBtnF_Tapped"></Rectangle>
+                            <Grid Grid.Row="3" Background="#5B3B23" Grid.ColumnSpan="3" CornerRadius="30" Tapped="btnFrancais_Tapped">
                                 <TextBlock x:Name="btnFrancais" Text="Français" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30" Height="38"/>
                                 <Grid.Resources>
                                     <!--animation-->
@@ -99,8 +109,7 @@
                                     </Storyboard>
                                 </Grid.Resources>
                             </Grid>
-                            <Grid Background="#5B3B23" CornerRadius="30" Margin="-21,92,-19,25" Grid.ColumnSpan="3" Tapped="btnMaths_Tapped">
-                                <Rectangle x:Name="animBtnM" Fill="Red" Opacity="0" Margin="-32,0,0,-11" Tapped="animBtnM_Tapped"></Rectangle>
+                            <Grid Grid.Row="5" Background="#5B3B23" CornerRadius="30" Grid.ColumnSpan="3" Tapped="btnMaths_Tapped">
                                 <TextBlock x:Name="btnMaths" Text="Mathématiques" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                                 <Grid.Resources>
                                     <!--animation-->
