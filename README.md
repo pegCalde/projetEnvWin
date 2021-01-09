@@ -26,10 +26,8 @@ application permettant de tester les connaissances en fin de CM2
 
 
 ## NOTE
-- choisir le visuel iphone 6 pr tt mettre en page
-- je n'ai pas modifier les pages maths duo parce que :
-  - je ne suis pas sure qu'on ai le tps de faire le mode duo
-  - je voulais voir avec toi si ca vaut le coup de faire des pages duo maths si au fianl c'est juste un ajout d'un 2e élève
+- choisir le visuel 13,5 surface book pr tt mettre en page
+- je n'ai pas modifier les pages maths duo parce que j'attend de voir si on a le tps de les faire qd mm
 
 ## TO DO
 ### 01/01/2021
@@ -61,36 +59,48 @@ application permettant de tester les connaissances en fin de CM2
 - mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge histoire Préhistoire OK
 
 ### 05/01/2021
-- mettre en place double tap pr mettre réponse sur frise Histoire EN COURS
-- bouton 'valider' pr réponses frise Histoire EN COURS
-- afficher les questions maths
-- afficher réponses maths -> tapped
-- afficher les questions Fr
-- afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé
-- bouton 'valider' pr réponses formulaire Fr
-- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge histoire EN COURS
-- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge francais
+- création nlles images pr frises OK
+
+### 06/01/2021
+- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge histoire OK
+- faire en sorte que histoire s'affiche en mode paysage OK
+- mettre en place double tap pr mettre réponse sur frise Histoire OK
+- bouton 'valider' pr réponses frise Histoire OK
+- créer page About OK
+
+### 07/01/2021
+- mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge francais EN COURS
 - mettre en place affichage bonne réponse en vert et mauvaise réponse en rouge maths
 - afficher notes Fr
 - afficher notes Maths
 - afficher notes Histoire
-- gérer import fichier Q/A francais
-- faire en sorte que histoire s'affiche en mode paysage EN COURS
-
-### 06/01/2021
-- 
-
-### 07/01/2021
-- 
+- gérer import fichier Q/A francais EN COURS
+- afficher les questions maths
+- afficher réponses maths -> tapped
+- afficher les questions Fr EN COURS
+- afficher réponses Fr -> checkbox pr choix multiple + radio pr fermé EN COURS
+- bouton 'valider' pr réponses formulaire Fr EN COURS
+- ajout btn retour sur ttes sous pages OK
 
 ### 08/01/2021
+Vérifier merge des branches sur master :
+- animation_btn_matieres
+- Questions_Reponses
+- page_about
+- update_frises
+- correctifs_mise_en_forme
+-------------------------------------
 - 
 
 ### 09/01/2021
 - résolution des bugs
-- vérifier affichage sur ttes les pages
-- commenter le code
+- vérifier affichage sur ttes les pages sur 2 ordis différents  EN COURS  
+ -- toutes pages sur mon ordi OK  
+ --
+- commenter le code EN COURS
+- créer page readme pour la prof
 
 ## BUGS
 - le menu reste visible sur certaines pages ce qui empêche de finir de mettre bien les input (sur les parties histoire)
-- soucis couleur sur certains textes, la couleur n'est jamais prise en compte 
+- soucis couleur sur certains textes, la couleur n'est jamais prise en compte => CAUSE MODE SOMBRE
+
