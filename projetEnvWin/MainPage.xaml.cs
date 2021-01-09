@@ -413,6 +413,30 @@ namespace projetEnvWin
         {
             this.Frame.Navigate(typeof(AboutPage), currentStudent);
         }
+
+        /*animation des boutons en rouge si l'élève est pas connecté*/
+        private void animBtnH_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimH.Begin();
+
+            }
+        }
+        private void animBtnF_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimF.Begin();
+            }
+        }
+        private void animBtnM_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimM.Begin();
+            }
+        }
         /* /fait par Peggy*/
 
 
