@@ -6,6 +6,8 @@ using System.Text;
 namespace projetEnvWin
 {
     public class Reponse
+    /*fait par Guillaume*/
+    class Reponse
     {
         string contenu;
         int statut;

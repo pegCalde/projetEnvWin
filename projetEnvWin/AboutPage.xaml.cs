@@ -19,18 +19,18 @@ using Windows.UI.Xaml.Navigation;
 namespace projetEnvWin
 {
     /// <summary>
-    ///Page faite par Peggy et Guillaume
+    /// Page faite par Peggy 
     /// </summary>
-    public sealed partial class MathsMesuresPage : Page
+    public sealed partial class AboutPage : Page
     {
         Eleve currentStudent;
-        public MathsMesuresPage()
+
+        public AboutPage()
         {
             this.InitializeComponent();
         }
 
-        /*fait par Peggy*/
-        /* ici permet d'afficher le nom de l'élève et de bloquer l'accès aux pages des matières aux élèves non connectés*/
+        /* ici permet de bloquer l'accès aux pages des matières aux élèves non connectés mais permet l'accès à la page about*/
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -88,7 +88,15 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsCalculPage), currentStudent);
             }
         }
-        
+
+        private void btnMmesures_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (currentStudent != null)
+            {
+                this.Frame.Navigate(typeof(MathsMesuresPage), currentStudent);
+            }
+        }
+
         private void btnMnum_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -122,7 +130,8 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(HistTMPage), currentStudent);
             }
         }
-        
+
+
         private void btnHec_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -130,6 +139,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(HistECPage), currentStudent);
             }
         }
+
         private void btnHp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -155,7 +165,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrConjugPage), currentStudent);
             }
         }
-        
+
         private void btnFrLexique_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -163,7 +173,6 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrLexPage), currentStudent);
             }
         }
-
         private void btnFrGram_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -171,6 +180,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrGramPage), currentStudent);
             }
         }
+
         private void btnFrOrtho_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -184,36 +194,5 @@ namespace projetEnvWin
         {
             this.Frame.Navigate(typeof(AidePage));
         }
-
-        /*PAGE ABOUT DANS MENU*/
-        private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(AboutPage));
-        }
-
-        /*Bouton retour disponible uniqument sur les page de quizz*/
-        private void BackBtn_Click(object sender, RoutedEventArgs e)
-        {
-            OnRetourRequested();
-        }
-        private bool OnRetourRequested()
-        {
-            if (this.Frame.CanGoBack)
-            {
-                this.Frame.GoBack();
-
-                return true;
-            }
-
-            return false;
-        }
-        /* /fait par Peggy*/
-
-
-        /*fait par Guillaume*/
-
-
-
-
     }
 }

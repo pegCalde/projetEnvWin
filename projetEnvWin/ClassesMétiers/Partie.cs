@@ -6,6 +6,8 @@ using System.IO;
 
 namespace projetEnvWin
 {
+    /*fait par Guillaume*/
+    class Partie
     public class Partie
     {
         List<Question> listeQuestion;

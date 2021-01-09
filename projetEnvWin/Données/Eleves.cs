@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 namespace projetEnvWin.Données
 {
     class Eleves : ObservableCollection<Eleve>
-    { 
-
+    {
+        /*fait par Guillaume*/
         public Eleves(): base()
         {
             Add(new Eleve("Savin Guillaume", 0));

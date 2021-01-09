@@ -6,6 +6,8 @@ using System.Text;
 
 namespace projetEnvWin
 {
+    /*fait par Guillaume*/
+    class Matiere
     public class Matiere
     {
         string nom;
