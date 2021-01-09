@@ -41,7 +41,6 @@ namespace projetEnvWin
         }
 
         /*fait par Guillaume*/
-        /*permet de selectionner un élève et d'afficher le nom de l'élève*/
         public async Task createAppCustomDirectory()
         {
             string pathData = "Données";
@@ -235,6 +234,7 @@ namespace projetEnvWin
             francais.ListePartie.Add(frPart);
         }
 
+        /*permet de selectionner un élève et d'afficher le nom de l'élève*/
         private async void btnValider_Click(object sender, RoutedEventArgs e)
         {
             if (choixEleves.SelectedItem == null)
@@ -412,6 +412,30 @@ namespace projetEnvWin
         private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AboutPage), currentStudent);
+        }
+
+        /*animation des boutons en rouge si l'élève est pas connecté*/
+        private void animBtnH_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimH.Begin();
+
+            }
+        }
+        private void animBtnF_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimF.Begin();
+            }
+        }
+        private void animBtnM_Tapped(object sender, RoutedEventArgs e)
+        {
+            if (currentStudent == null)
+            {
+                appAnimM.Begin();
+            }
         }
         /* /fait par Peggy*/
 

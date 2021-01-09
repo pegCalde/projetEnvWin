@@ -131,6 +131,8 @@
     <Compile Include="ClassesMétiers\Question.cs" />
     <Compile Include="ClassesMétiers\Reponse.cs" />
     <Compile Include="Données\Eleves.cs" />
+    <Compile Include="Données\QuestionsMaths.cs" />
+    <Compile Include="Données\ReponsesMaths.cs" />
     <Compile Include="FrancaisPage.xaml.cs">
       <DependentUpon>FrancaisPage.xaml</DependentUpon>
     </Compile>

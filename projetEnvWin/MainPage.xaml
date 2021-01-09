@@ -98,9 +98,17 @@
                                 <ColumnDefinition Width="5*"/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Row="1" Background="#5B3B23" Grid.ColumnSpan="3" CornerRadius="30" Tapped="btnHistoire_Tapped">
+                                <Rectangle x:Name="animBtnH" Fill="Red" Opacity="0" Margin="-32,0,0,-11" Tapped="animBtnH_Tapped"></Rectangle>
                                 <TextBlock x:Name="btnHistoire" Text="Histoire" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
+                                <Grid.Resources>
+                                    <!--animation-->
+                                    <Storyboard x:Name="appAnimH">
+                                        <DoubleAnimation Storyboard.TargetName="animBtnH" Storyboard.TargetProperty="Opacity" From="0.2" To="1.0" Duration="0:0:2" AutoReverse="True" RepeatBehavior="2"/>
+                                    </Storyboard>
+                                </Grid.Resources>
                             </Grid>
                             <Grid Grid.Row="3" Background="#5B3B23" Grid.ColumnSpan="3" CornerRadius="30" Tapped="btnFrancais_Tapped">
+                                <Rectangle x:Name="animBtnF" Fill="Red" Opacity="0" Margin="-32,0,0,-11" Tapped="animBtnF_Tapped"></Rectangle>
                                 <TextBlock x:Name="btnFrancais" Text="Français" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30" Height="38"/>
                                 <Grid.Resources>
                                     <!--animation-->
@@ -110,6 +118,7 @@
                                 </Grid.Resources>
                             </Grid>
                             <Grid Grid.Row="5" Background="#5B3B23" CornerRadius="30" Grid.ColumnSpan="3" Tapped="btnMaths_Tapped">
+                                <Rectangle x:Name="animBtnM" Fill="Red" Opacity="0" Margin="-32,0,0,-11" Tapped="animBtnM_Tapped"></Rectangle>
                                 <TextBlock x:Name="btnMaths" Text="Mathématiques" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
                                 <Grid.Resources>
                                     <!--animation-->
