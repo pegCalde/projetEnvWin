@@ -41,7 +41,6 @@ namespace projetEnvWin
         }
 
         /*fait par Guillaume*/
-        /*permet de selectionner un élève et d'afficher le nom de l'élève*/
         public async Task createAppCustomDirectory()
         {
             string pathData = "Données";
@@ -235,6 +234,7 @@ namespace projetEnvWin
             francais.ListePartie.Add(frPart);
         }
 
+        /*permet de selectionner un élève et d'afficher le nom de l'élève*/
         private async void btnValider_Click(object sender, RoutedEventArgs e)
         {
             if (choixEleves.SelectedItem == null)
