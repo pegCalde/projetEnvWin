@@ -22,5 +22,11 @@ namespace projetEnvWin
             get { return contenu; }
             set { contenu = value; }
         }
+
+        public int Statut
+        {
+            get { return statut; }
+            set { statut = value; }
+        }
     }    
 }

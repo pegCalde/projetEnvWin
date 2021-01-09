@@ -272,7 +272,7 @@ namespace projetEnvWin
         private void choixEleves_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             btnValider.Background = new SolidColorBrush(Colors.LimeGreen);
-            btnValider.Foreground = new SolidColorBrush(Colors.LightGray);
+            btnValider.Foreground = new SolidColorBrush(Colors.White);
             btnValider.FontWeight = Windows.UI.Text.FontWeights.Bold;
         }
 
