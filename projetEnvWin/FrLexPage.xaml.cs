@@ -34,6 +34,8 @@ namespace projetEnvWin
             generateQuestions();
         }
 
+        /*fait par Guillaume*/
+        /*import des fichiers .txt et affichage des questions/réponses*/
         public async void generateQuestions()
         {
             await loadCustomFile();
@@ -469,7 +471,10 @@ namespace projetEnvWin
 
             return false;
         }
+        /* /fait par Peggy*/
 
+        /*fait par Guillaume*/
+        /*vérification des réponses*/
         private void btnValider_Click(object sender, RoutedEventArgs e)
         {
             foreach (Grid g in form.Children)
@@ -515,10 +520,7 @@ namespace projetEnvWin
                 }
             }
         }
-        /* /fait par Peggy*/
 
-
-        /*fait par Guillaume*/
 
 
 

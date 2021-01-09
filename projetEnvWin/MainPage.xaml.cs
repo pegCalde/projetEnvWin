@@ -41,6 +41,7 @@ namespace projetEnvWin
         }
 
         /*fait par Guillaume*/
+        /*import des fichiers .txt et affichage des questions/réponses*/
         public async Task createAppCustomDirectory()
         {
             string pathData = "Données";
