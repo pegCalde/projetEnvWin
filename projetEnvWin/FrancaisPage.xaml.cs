@@ -57,6 +57,7 @@ namespace projetEnvWin
             loadCustomFile();
         }
 
+        /*import des fichiers .txt et affichage des questions/réponses*/
         public async Task createAppCustomDirectory()
         {
             string pathData = "Données";

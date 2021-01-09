@@ -9,8 +9,7 @@ namespace projetEnvWin.Données
 {
     class ReponsesMaths : ObservableCollection<Reponse>
     {
-        /*création + ajout des réponses par Peggy
-         * classe terminée par Guillaume*/
+        /*fait par Peggy*/
         public ReponsesMaths() : base()
         {
             //String p_contenu, Type p_type, int p_statut
