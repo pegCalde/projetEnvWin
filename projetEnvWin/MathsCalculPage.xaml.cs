@@ -19,7 +19,7 @@ using Windows.UI.Xaml.Navigation;
 namespace projetEnvWin
 {
     /// <summary>
-    /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
+    /// Page faite par Peggy et Guillaume
     /// </summary>
     public sealed partial class MathsCalculPage : Page
     {
@@ -29,6 +29,8 @@ namespace projetEnvWin
             this.InitializeComponent();
         }
 
+        /*fait par Peggy*/
+        /* ici permet d'afficher le nom de l'élève et de bloquer l'accès aux pages des matières aux élèves non connectés*/
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -56,7 +58,6 @@ namespace projetEnvWin
         }
 
         /*RETOUR A L'ACCUEIL DANS MENU*/
-
         private void Home_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage), currentStudent);
@@ -72,7 +73,6 @@ namespace projetEnvWin
         }
 
         /*PARTIES MATHS DANS MENU*/
-        
         private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -104,8 +104,8 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(HistoirePage), currentStudent);
             }
         }
+
         /*PARTIES HISTOIRE DANS MENU*/
-        
         private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -137,7 +137,6 @@ namespace projetEnvWin
         }
         
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
-
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -147,7 +146,6 @@ namespace projetEnvWin
         }
 
         /*PARTIES FRANCAIS DANS MENU*/
-        
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -180,19 +178,18 @@ namespace projetEnvWin
         }
         
         /*PAGE AIDE DANS MENU*/
-        
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
         }
 
         /*PAGE ABOUT DANS MENU*/
-
         private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AboutPage));
         }
 
+        /*Bouton retour disponible uniqument sur les page de quizz*/
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
             OnRetourRequested();
@@ -208,6 +205,13 @@ namespace projetEnvWin
 
             return false;
         }
+        /* /fait par Peggy*/
+
+
+        /*fait par Guillaume*/
+
+
+
 
     }
 }

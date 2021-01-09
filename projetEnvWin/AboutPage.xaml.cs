@@ -19,7 +19,7 @@ using Windows.UI.Xaml.Navigation;
 namespace projetEnvWin
 {
     /// <summary>
-    /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
+    /// Page faite par Peggy 
     /// </summary>
     public sealed partial class AboutPage : Page
     {
@@ -30,6 +30,7 @@ namespace projetEnvWin
             this.InitializeComponent();
         }
 
+        /* ici permet de bloquer l'accès aux pages des matières aux élèves non connectés mais permet l'accès à la page about*/
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -57,7 +58,6 @@ namespace projetEnvWin
         }
 
         /*RETOUR A L'ACCUEIL DANS MENU*/
-
         private void Home_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage), currentStudent);
@@ -71,8 +71,8 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsPage), currentStudent);
             }
         }
-        /*PARTIES MATHS DANS MENU*/
 
+        /*PARTIES MATHS DANS MENU*/
         private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -113,6 +113,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(HistoirePage), currentStudent);
             }
         }
+
         /*PARTIES HISTOIRE DANS MENU*/
         private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -147,9 +148,7 @@ namespace projetEnvWin
             }
         }
 
-
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
-
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -159,7 +158,6 @@ namespace projetEnvWin
         }
 
         /*PARTIES FRANCAIS DANS MENU*/
-
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -192,7 +190,6 @@ namespace projetEnvWin
         }
 
         /*PAGE AIDE DANS MENU*/
-
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));

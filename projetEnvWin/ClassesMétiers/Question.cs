@@ -6,6 +6,7 @@ using System.Text;
 
 namespace projetEnvWin
 {
+    /*fait par Guillaume*/
     class Question
     {
         String enonce;

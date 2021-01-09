@@ -5,6 +5,7 @@ using System.Text;
 
 namespace projetEnvWin
 {
+    /*fait par Guillaume*/
     class Matiere
     {
         List<Partie> listePartie;

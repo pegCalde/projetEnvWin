@@ -21,7 +21,7 @@ using projetEnvWin;
 namespace projetEnvWin
 {
     /// <summary>
-    /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
+    /// page faite par Guillaume et Peggy
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -35,6 +35,8 @@ namespace projetEnvWin
             choixEleves.DisplayMemberPath = "Nom";
         }
 
+        /*fait par Guillaume*/
+        /*permet de selectionner un élève et d'afficher le nom de l'élève*/
         private async void btnValider_Click(object sender, RoutedEventArgs e)
         {
             if (choixEleves.SelectedItem == null)
@@ -84,8 +86,8 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsPage), currentStudent);
             }
         }
+
         /*PARTIES MATHS DANS MENU*/
-        
         private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -126,8 +128,8 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(HistoirePage), currentStudent);
             }
         }
+
         /*PARTIES HISTOIRE DANS MENU*/
-        
         private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -159,7 +161,6 @@ namespace projetEnvWin
         }
         
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
-        
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -169,7 +170,6 @@ namespace projetEnvWin
         }
         
         /*PARTIES FRANCAIS DANS MENU*/
-        
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -200,21 +200,26 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrOrthoPage), currentStudent);
             }
         }
-        
+        /* /fait par Guillaume*/
+
+
+        /*fait par Peggy*/
         /*PAGE AIDE DANS MENU*/
-        
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage), currentStudent);
         }
 
         /*PAGE ABOUT DANS MENU*/
-
         private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AboutPage));
         }
+        /* /fait par Peggy*/
 
+
+        /*fait par Guillaume*/
+        /*ici permet de bloquer l'accès aux pages des matières aux élèves non connectés*/
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             if (e.Parameter == "")

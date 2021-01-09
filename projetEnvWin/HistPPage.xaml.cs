@@ -19,7 +19,7 @@ using Windows.UI.Xaml.Navigation;
 namespace projetEnvWin
 {
     /// <summary>
-    /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
+    /// Page commencée par Guillaume et terminée par Peggy
     /// </summary>
     public sealed partial class HistPPage : Page
     {
@@ -30,6 +30,8 @@ namespace projetEnvWin
             this.InitializeComponent();
         }
 
+        /*fait par Guillaume*/
+        /* ici permet de bloquer l'accès aux pages des matières aux élèves non connectés*/
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -57,7 +59,6 @@ namespace projetEnvWin
         }
 
         /*RETOUR A L'ACCUEIL DANS MENU*/
-
         private void Home_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage), currentStudent);
@@ -71,8 +72,8 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(MathsPage), currentStudent);
             }
         }
-        /*PARTIES MATHS DANS MENU*/
 
+        /*PARTIES MATHS DANS MENU*/
         private void btnMgeo_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -113,6 +114,7 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(HistoirePage), currentStudent);
             }
         }
+
         /*PARTIES HISTOIRE DANS MENU*/
         private void btnHma_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -138,7 +140,6 @@ namespace projetEnvWin
         }
 
         /*SECTION FRANCAIS DANS MENU + SUR ACCUEIL*/
-
         private void btnFrancais_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -148,7 +149,6 @@ namespace projetEnvWin
         }
 
         /*PARTIES FRANCAIS DANS MENU*/
-
         private void btnFrConjug_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (currentStudent != null)
@@ -179,21 +179,22 @@ namespace projetEnvWin
                 this.Frame.Navigate(typeof(FrOrthoPage), currentStudent);
             }
         }
+        /* /fait par Guillaume*/
 
+        /*fait par Peggy*/
         /*PAGE AIDE DANS MENU*/
-        
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AidePage));
         }
 
         /*PAGE ABOUT DANS MENU*/
-
         private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AboutPage));
         }
 
+        /*Bouton retour disponible uniqument sur les page de quizz*/
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
             OnRetourRequested();
@@ -209,7 +210,11 @@ namespace projetEnvWin
 
             return false;
         }
+        /* /fait par Peggy*/
 
+
+        /*fait par Guillaume*/
+        /*permet le double tap => cliquer sur une case réponse et la mettre sur la case de la frise sur laquelle on clic*/
         private void GridExo_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Grid currentGrid = sender as Grid;
@@ -230,6 +235,7 @@ namespace projetEnvWin
             }            
         }
 
+        /*bouton permettant de valider les réponses et de vérifier si les réponses sont correct ou pas*/
         private async void btnValider_Click(object sender, RoutedEventArgs e)
         {
             bool reussite = true;
