@@ -10,7 +10,9 @@ namespace projetEnvWin.Données
 {
     class Questions : ObservableCollection<Question>
     {
-            public Questions() : base()
+        /*création + ajout des questions par Peggy
+        * classe terminée par Guillaume*/
+        public Questions() : base()
             {
             //String p_enonce, List<Reponse> p_reponsesPossibles, List<int> p_correction
             /*MATHS*/

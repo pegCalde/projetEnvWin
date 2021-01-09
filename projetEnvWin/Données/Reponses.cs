@@ -10,6 +10,8 @@ namespace projetEnvWin.Données
 {
     class Reponses : ObservableCollection<Reponse>
     {
+        /*création + ajout des réponses par Peggy
+         * classe terminée par Guillaume*/
         public Reponses() : base()
         {
             //String p_contenu, Type p_type, int p_statut
