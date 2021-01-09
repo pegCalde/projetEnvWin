@@ -5,23 +5,21 @@ using System.Text;
 
 namespace projetEnvWin
 {
-    class Reponse
+    public class Reponse
     {
-        String contenu;
-        Type type;
+        string contenu;
         int statut;
 
-        public Reponse(String p_contenu, Type p_type, int p_statut)
+        public Reponse(String p_contenu, int p_statut)
         {
             this.contenu = p_contenu;
-            this.type = p_type;
             this.statut = p_statut;
         }
-        
-    }
 
-    enum Type
-    {
-        CLOSE, QCM, SORT
-    }
+        public string Contenu
+        {
+            get { return contenu; }
+            set { contenu = value; }
+        }
+    }    
 }

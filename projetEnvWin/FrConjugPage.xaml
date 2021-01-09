@@ -81,7 +81,7 @@
                             <Grid Background="#5B3B23" Margin="-44,-229,-43,372" Grid.ColumnSpan="3" >
                                 <TextBlock x:Name="btnfrTitre" Text="Français" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="20" Margin="0,5,0,0"/>
                             </Grid>
-                            <Grid Grid.Column="0" Margin="-20,-50,-20,171" Grid.ColumnSpan="3">
+                            <Grid Grid.Column="0" x:Name="form" Margin="-20,-50,-20,171" Grid.ColumnSpan="3">
                                 <!--Formulaire-->
                             </Grid>
                         </Grid>

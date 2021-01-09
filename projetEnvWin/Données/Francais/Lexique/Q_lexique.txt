@@ -1,0 +1,15 @@
+Parmi ces mots, lequel n'appartient pas a la meme famille que les autres ?
+CLOSE
+-1,-1,1
+Quel mot n'est pas, ici, synonyme des autres ?
+CLOSE
+-1,-1,1
+Sur les tours du chateau, flottant au vent, se trouvaient 4 beaux oriflammes. Qu'est ce qu'un oriflamme ?
+CLOSE
+-1,-1,1
+Quel prefixe utiliserais tu pour former le contraire du mot 'legal' ?
+CLOSE
+-1,-1,1
+Complete cette phrase avec le bon homonyme: Quand tu auras fini de...la table, viens me voir.
+CLOSE
+-1,1,-1

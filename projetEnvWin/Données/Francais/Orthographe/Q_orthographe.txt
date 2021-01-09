@@ -1,0 +1,15 @@
+Quelle lettre finale muette choisis tu pour le plom( )
+CLOSE
+1,-1,-1
+Choisis le bon homophone Louis a pris la balle et ( ) lancee dans les airs.
+CLOSE
+-1,1,-1
+Choisis le bon homophone Mon frere ( ) cache sous le lit
+CLOSE
+-1,1,-1
+Accorde correctement le participe passe Les feuilles sont ( )
+CLOSE
+-1,-1,1
+Parmi ces mots, lequel est mal orthographie au pluriel
+CLOSE
+1,-1,-1
