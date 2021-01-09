@@ -44,5 +44,20 @@ namespace projetEnvWin
             get { return type; }
             set { type = value; }
         }
+
+        public Reponse this[string value]
+        {
+            get
+            {
+                foreach(Reponse r in ReponsesPossibles)
+                {
+                    if(r.Contenu == value)
+                    {
+                        return r;
+                    }
+                }
+                return null;
+            }
+        }
     }
 }

@@ -2,7 +2,7 @@ Conjugue le verbe entre parenthèse au présent. Les élèves (remuer) beaucoup 
 CLOSE
 -1,-1,1
 Conjugue le verbe entre parenthèse au futur? Demain, je/j' (aller) au cinéma.
-CLOSE
+QCM
 -1,1,-1
 Conjugue le verbe entre parenthèse à l'impératif. Paul et toi (plier) le linge.
 CLOSE
@@ -11,5 +11,5 @@ Conjugue le verbe entre parenthèse au passé composé. La petite fille (partir)
 CLOSE
 -1,1,-1
 Conjugue le verbe entre parenthèse au passé simple. Ces amis (finir) leure travail très tard.
-CLOSE
+QCM
 -1,-1,1

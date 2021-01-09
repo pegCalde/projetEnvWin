@@ -29,5 +29,20 @@ namespace projetEnvWin
             get { return listeQuestion; }
             set { listeQuestion = value; }
         }
+
+        public Question this[string value]
+        {
+            get
+            {
+                foreach (Question q in ListeQuestion)
+                {
+                    if (q.Enonce == value)
+                    {
+                        return q;
+                    }
+                }
+                return null;
+            }
+        }
     }
 }
