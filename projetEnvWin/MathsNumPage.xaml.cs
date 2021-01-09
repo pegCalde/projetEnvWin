@@ -183,13 +183,13 @@ namespace projetEnvWin
         /*PAGE AIDE DANS MENU*/
         private void btnHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(AidePage));
+            this.Frame.Navigate(typeof(AidePage), currentStudent);
         }
 
         /*PAGE ABOUT DANS MENU*/
         private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(AboutPage));
+            this.Frame.Navigate(typeof(AboutPage), currentStudent);
         }
 
         /*Bouton retour disponible uniqument sur les page de quizz*/

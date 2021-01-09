@@ -411,7 +411,7 @@ namespace projetEnvWin
         /*PAGE ABOUT DANS MENU*/
         private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(AboutPage));
+            this.Frame.Navigate(typeof(AboutPage), currentStudent);
         }
         /* /fait par Peggy*/
 

@@ -29,7 +29,7 @@ namespace projetEnvWin
             this.InitializeComponent();
         }
 
-        /* ici permet de bloquer l'accès aux pages des matières aux élèves non connectés mais permet l'accès à la page aide*/
+        /* ici permet de bloquer l'accès aux pages des matières aux élèves non connectés*/
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -192,7 +192,7 @@ namespace projetEnvWin
         /*PAGE ABOUT DANS MENU*/
         private void btnAp_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(AboutPage));
+            this.Frame.Navigate(typeof(AboutPage), currentStudent);
         }
     }
 }

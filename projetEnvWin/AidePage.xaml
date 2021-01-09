@@ -105,15 +105,19 @@
                                              Il faut dans un premier temps, choisir l'élève qui testera ses connaissances puis choisir la matière à tester.
                                              Une fois la matière choisie, il reste à choisir la partie puis le quizz correspondant s'affichera.
                                              --------------------------------------------
+                                         
                                          "/>
                                     <Run FontSize="15" Text="Une note s'affiche une fois une partie finie ainsi qu'une note globale pour la matière.
                                              ---------------------------------------------
+                                         
                                          "/>
                                     <Run FontSize="15" Text="La matière Mathématiques contient un chrono et offre la possibilité de se tester en mode duel avec un autre élève.
                                              ---------------------------------------------
+                                         
                                          "/>
                                     <Run FontSize="15" Text="La matière Histoire contient une frise sur laquelle il faut mettre les bons évènements correspondant aux bonnes dates.
                                              ---------------------------------------------
+                                         
                                          "/>
                                     <Run FontSize="15" Text=" La matière Français est constitué de questions soit à choix multiples soit fermé."/>
                                 </Paragraph>

@@ -201,6 +201,7 @@
     <Content Include="Assets\prehistoire.png" />
     <Content Include="Assets\speech-bubble-blc.png" />
     <Content Include="Assets\speech-bubble.png" />
+    <Content Include="Assets\tpsModernes.png" />
     <Content Include="Données\Francais\Conjugaison\A_conjugaison.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
